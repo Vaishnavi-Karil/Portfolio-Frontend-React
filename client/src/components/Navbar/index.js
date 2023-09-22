@@ -1,11 +1,11 @@
-
 import React from "react";
+import { ButtonContainer, GithHubButton, NavItems, NavLink, NavbarContainer, NavbarLogo, WebsiteName } from "./NavbarStyle";
 
 export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarLogo>LOGO</NavbarLogo>
-      <WesiteName>Portfolio</WesiteName>
+      <WebsiteName>Portfolio</WebsiteName>
       <NavItems> 
         <NavLink>
           About
@@ -30,4 +30,4 @@ export const Navbar = () => {
       </ButtonContainer>
     </NavbarContainer>
   );
-};
+  }
