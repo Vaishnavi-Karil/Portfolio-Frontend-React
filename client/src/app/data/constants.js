@@ -5,7 +5,7 @@ export const ArrayOfSkills = [
      },
      {
         title: "Backend Skills",
-        skills : ["REST API's","Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "cors", "Git (Deploy)", "Jira", "Elastic Beanstalk (Host)", "CI/CD"]
+        skills : ["REST API's","Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors", "Git (Deploy)", "Jira", "Elastic Beanstalk (Host)", "CI/CD"]
      }, 
     
 ]; 
