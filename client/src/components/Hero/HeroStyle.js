@@ -15,10 +15,9 @@ export const ImageContainer = styled.div`
 
 export const ProfileImage = styled(Image)`
   width: 68%;
-  height: 80%;
   border: transparent;
   border-radius: 60%;
-  margin: 3.5rem 0rem;
+  margin: 13% 0rem;
 `;
 
 export const DescriptionContainer = styled.div`
