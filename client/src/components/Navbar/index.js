@@ -1,33 +1,30 @@
 import React from "react";
-import { ButtonContainer, GithHubButton, NavItems, NavLink, NavbarContainer, NavbarLogo, WebsiteName } from "./NavbarStyle";
+import {
+  Logo,
+  LogoContainer,
+  NavItems,
+  NavLink,
+  NavbarContainer,
+} from "./NavbarStyle";
+import { route } from "@/app/utils/routes";
 
 export const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavbarLogo>LOGO</NavbarLogo>
-      <WebsiteName>Portfolio</WebsiteName>
-      <NavItems> 
-        <NavLink>
-          About
-        </NavLink>
-        <NavLink> 
-          Skills
-        </NavLink>
-        <NavLink> 
-          Experience
-        </NavLink>
-        <NavLink> 
-          Projects
-        </NavLink>
-        <NavLink> 
-          Education
-        </NavLink>
+      <LogoContainer>
+        <Logo href="/#home">Portfolio.</Logo>
+      </LogoContainer>
+      <NavItems>
+        {route.map((pg, index) => {
+          const { id, path, component, text } = pg;
+          return (
+            <NavLink key={id} href={path}>
+              {text}
+            </NavLink>
+          );
+        })}
+      
       </NavItems>
-      <ButtonContainer> 
-        <GithHubButton>
-          GitHub Profile
-        </GithHubButton>
-      </ButtonContainer>
     </NavbarContainer>
   );
-  }
+};

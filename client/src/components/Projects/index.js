@@ -1,13 +1,12 @@
 import React from 'react'
-
 import { CardContainer, CardHeadingContainer, Heading1, MoreInformation } from '@/styles/Styles'
 
-export const Skills = () => {
+export const Projects = () => {
   return (
-    <CardContainer>
+    <CardContainer id ="projects">
       <CardHeadingContainer>
-      <MoreInformation>Explore My</MoreInformation>
-        <Heading1>Skills</Heading1>
+      <MoreInformation>Browse My Recent</MoreInformation>
+        <Heading1>Projects</Heading1>
       </CardHeadingContainer>
     </CardContainer>
   )
