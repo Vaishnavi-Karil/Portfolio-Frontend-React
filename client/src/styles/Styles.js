@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -27,9 +28,11 @@ letter-spacing: 0.2rem;
 
 
  export const CardContainer = styled.div`
-height : 80vh; 
+min-height : 80vh; 
+height : auto;
 text-align: center; 
 display : flex; 
+flex-direction : column;
 width : 100%;
 margin-bottom : 1.5rem;`
 
@@ -81,4 +84,10 @@ width : 10rem;
 
 &:hover {
 background :  rgb(0, 0, 0);
-}`
+}`; 
+
+export const Icon = styled(Image)`
+width : 1.8rem; 
+height: 1.8rem;
+`
+// /assets/checkmark.png
