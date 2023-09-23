@@ -6,7 +6,6 @@ export const NavbarContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
   align-items: center;
   text-align: center;
   margin: 0rem 10rem;

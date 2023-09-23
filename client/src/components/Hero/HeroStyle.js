@@ -11,10 +11,6 @@ export const HeroContainer = styled.div`
 
 export const ImageContainer = styled.div`
   width: 49%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const ProfileImage = styled(Image)`
@@ -22,7 +18,7 @@ export const ProfileImage = styled(Image)`
   height: 80%;
   border: transparent;
   border-radius: 60%;
-  margin: 3rem 0rem;
+  margin: 3.5rem 0rem;
 `;
 
 export const DescriptionContainer = styled.div`
