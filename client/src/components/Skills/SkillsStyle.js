@@ -9,10 +9,9 @@ gap : 1.5rem`;
 
 
 export const CardDetailsContainer = styled.div`
-border: rgb(53, 53, 53) 0.1rem solid;
-border-color: rgb(163, 163, 163);
 width : 100%;
 border-radius: 3rem;
+border: rgb(53, 53, 53) 0.1rem solid;
 `;
 
 

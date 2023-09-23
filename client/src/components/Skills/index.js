@@ -17,7 +17,7 @@ import checkmark from "../../../assets/checkmark.png";
 import { ArrayOfSkills } from "@/app/data/constants";
 export const Skills = () => {
   return (
-    <CardContainer>
+    <CardContainer id ="skills">
       <CardHeadingContainer>
         <MoreInformation>Explore My</MoreInformation>
         <Heading1>Skills</Heading1>
@@ -25,7 +25,6 @@ export const Skills = () => {
       <CardDetails>
         {ArrayOfSkills.map((element, index) => {
           const { title, skills } = element;
-
           return (
             <CardDetailsContainer key={index}>
               <SkillCardHeader>{title}</SkillCardHeader>
@@ -42,10 +41,6 @@ export const Skills = () => {
             </CardDetailsContainer>
           );
         })}
-
-        {/* <CardDetailsContainer>
-          <SkillCardHeader></SkillCardHeader>
-        </CardDetailsContainer> */}
       </CardDetails>
     </CardContainer>
   );
