@@ -25,11 +25,6 @@ export const route = [
     text : 'Projects',
   },
   {
-    id: "education",
-    path: "/#education",
-    text: 'Education',
-  },
-  {
     id: "contact",
     path: "/#contact",
     text: 'Contact', 

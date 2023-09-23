@@ -40,7 +40,12 @@ export const AboutHeader = styled.h3``;
 
 export const Details = styled.div``;
 
-export const ExperienceDetails = styled.div``;
+export const ExperienceDetails = styled.div`
+margin: 1.9rem 0rem;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+justify-content: space-around;`;
 
 export const EductionDetails = styled.div``;
 
