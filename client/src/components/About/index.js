@@ -8,7 +8,9 @@ import {
 import {
   AboutContainer,
   AboutHeader,
+  AboutIntenshipOn,
   BackendExperience,
+  CompanyName,
   Container,
   Details,
   EducationDetails,
@@ -37,10 +39,10 @@ export const About = () => {
             <Details>
               <AboutHeader>Experience</AboutHeader>
               <ExperienceDetails>
-              <FrontendExperience>
+                <FrontendExperience>
                   <p> 3 Years</p>
                   <p>Frontend Experience</p>
-              </FrontendExperience>
+                </FrontendExperience>
                 <BackendExperience>
                   <p> 6 + Months</p>
                   <p>Backend Experience</p>
@@ -65,7 +67,14 @@ export const About = () => {
             <ProfileImage src={education_pic} alt={education_pic} />
             <Details>
               <AboutHeader>Education</AboutHeader>
-              <EductionDetails></EductionDetails>
+              <EductionDetails>
+                <FrontendExperience>
+                  <p>B.Sc Bachelor of Science, CS</p>
+                </FrontendExperience>
+                <BackendExperience>
+                  <p>M.Sc Master of Science, IT</p>
+                </BackendExperience>
+              </EductionDetails>
             </Details>
           </Container>
         </EducationDetails>

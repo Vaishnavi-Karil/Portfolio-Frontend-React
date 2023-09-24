@@ -1,15 +1,3 @@
-// export const ArrayOfSkills = [
-//      {
-//         title : "Frontend Skills",
-//         skills : ["Next.js", "React", "Redux", "JavaScript", "ECMAScript","Material Ui", "Styled Component", "API's Integration", "Git(Deploy)", "CI/CD", "Jira", "AWS Amplify (Host)"]
-//      },
-//      {
-//         title: "Backend Skills",
-//         skills : ["REST API's","Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors", "Git (Deploy)", "Jira", "Elastic Beanstalk (Host)", "CI/CD"]
-//      },
-
-// ];
-
 export const ArrayOfSkills = [
   {
     title: "Frontend Skills",
@@ -38,27 +26,29 @@ export const ArrayOfSkills = [
       "Cors",
     ],
   },
+];
 
+export const ArrayOfTools = [
   {
     title: "Deploy & Host Tools",
-    skills: [
+    tools: [
       "Git (Deploy)",
       "Jira",
       "Elastic Beanstalk (Host)",
       "CI/CD",
       "AWS Amplify (Host)",
-      "Vercel"
+      "Vercel",
     ],
   },
   {
     title: "Developer Tools",
-    skills: [
+    tools: [
       "React DevTools",
       "Redux DevTools",
       "Google Chrome Debugger Tools",
       "Postman",
       "MongoDB Compass",
-      "MongoDB Shell"
+      "MongoDB Shell",
     ],
   },
 ];

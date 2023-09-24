@@ -53,11 +53,18 @@ export const ExperienceDetails = styled.div`
   font-size : 1.4rem;
 `;
 
-export const EductionDetails = styled.div``;
+export const EductionDetails = styled.div`
+color : rgb(85, 85, 85);
+font-size : 1.4rem;`;
 
-export const IntenshipDetails = styled.div``;
+export const IntenshipDetails = styled.div`
+display : flex; 
+flex-direction : column; 
+padding: 1rem ;
+`;
 
 export const FrontendExperience = styled.div`
 `;
 
 export const BackendExperience = styled.div``;
+

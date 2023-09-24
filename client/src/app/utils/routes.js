@@ -15,6 +15,11 @@ export const route = [
     text: 'Skills',
   },
   {
+    id: "tools",
+    path: "/#tools",
+    text: 'Tools',
+  },
+  {
     id: "experience",
     path: "/#experience",
     text : 'Experience',
