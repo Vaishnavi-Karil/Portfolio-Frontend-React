@@ -1,0 +1,18 @@
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 8%;
+  }
+
+   //for Tablets and Medium Screens
+  @media only screen and (min-width: 600px) {
+    width: 100%;
+    height: 5%;
+  }
+
+   //for laptops and desktops
+  @media only screen and (min-width: 992px) {
+    width: 100%;
+    height: 10%;
+  }
+`;

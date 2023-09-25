@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Logo,
   LogoContainer,
@@ -9,11 +9,13 @@ import {
 import { route } from "@/app/utils/routes";
 
 export const Navbar = () => {
+ 
   return (
     <NavbarContainer>
       <LogoContainer>
         <Logo href="/">Portfolio.</Logo>
       </LogoContainer>
+     
       <NavItems>
         {route.map((pg, index) => {
           const { id, path, component, text } = pg;
@@ -23,7 +25,6 @@ export const Navbar = () => {
             </NavLink>
           );
         })}
-      
       </NavItems>
     </NavbarContainer>
   );
