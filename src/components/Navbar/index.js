@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <LogoContainer>
-        <Logo href="/#home">Portfolio.</Logo>
+        <Logo href="/">Portfolio.</Logo>
       </LogoContainer>
       <NavItems>
         {route.map((pg, index) => {

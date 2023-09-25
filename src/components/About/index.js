@@ -43,7 +43,7 @@ export const About = () => {
                   <p>Frontend Experience</p>
                 </FrontendExperience>
                 <BackendExperience>
-                  <DetailsHeader> 6 + Months</DetailsHeader>
+                  <DetailsHeader> 8 + Months</DetailsHeader>
                   <p>Backend Experience</p>
                 </BackendExperience>
               </Details>

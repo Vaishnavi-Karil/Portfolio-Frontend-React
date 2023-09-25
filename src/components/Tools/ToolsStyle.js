@@ -30,7 +30,7 @@ export const ToolCardHeader = styled.p`
 export const RenderToolContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  // padding: 0rem 2.5rem;
+
 `;
 
 export const ToolElement = styled.div`

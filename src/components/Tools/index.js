@@ -5,6 +5,7 @@ import {
   Heading1,
   Icon,
   MoreInformation,
+  ParaTypography,
 } from "@/styles/Styles";
 import {
   CardDetails,
@@ -30,10 +31,14 @@ export const Tools = () => {
               <ToolCardHeader>{title}</ToolCardHeader>
               <RenderToolContainer>
                 {tools.map((Tool) => {
+                   const { toolname, proficiency } = Tool;
                   return (
                     <ToolElement key={Tool}>
                       <Icon src={checkmark} alt="checkmark" />
-                      {Tool}
+                      <div>
+                        <p>{toolname}</p>
+                        <ParaTypography> {proficiency}</ParaTypography>
+                      </div>
                     </ToolElement>
                   );
                 })}

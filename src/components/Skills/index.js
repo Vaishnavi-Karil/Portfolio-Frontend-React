@@ -5,11 +5,11 @@ import {
   Heading1,
   Icon,
   MoreInformation,
+  ParaTypography,
 } from "@/styles/Styles";
 import {
   CardDetails,
   CardDetailsContainer,
-  ParaTypography,
   RenderSkillContainer,
   SkillCardHeader,
   SkillElement,
@@ -30,10 +30,10 @@ export const Skills = () => {
             <CardDetailsContainer key={index}>
               <SkillCardHeader>{title}</SkillCardHeader>
               <RenderSkillContainer>
-                {skills.map((skill) => {
+                {skills.map((skill, index) => {
                   const { skillname, proficiency } = skill;
                   return (
-                    <SkillElement key={skill}>
+                    <SkillElement key={index}>
                       <Icon src={checkmark} alt="checkmark" />
                       <div>
                         <p>{skillname}</p>

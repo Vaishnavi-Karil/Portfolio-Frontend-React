@@ -41,7 +41,3 @@ export const SkillElement = styled.div`
 `;
 
 
-export const ParaTypography = styled.p`
-color : rgb(85, 85, 85);
-font-size : 1.1rem;
-`;

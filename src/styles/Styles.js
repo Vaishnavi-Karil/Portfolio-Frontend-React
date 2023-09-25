@@ -91,3 +91,9 @@ width : 1.8rem;
 height: 1.8rem;
 `
 // /assets/checkmark.png
+
+
+export const ParaTypography = styled.p`
+color : rgb(85, 85, 85);
+font-size : 1.1rem;
+`;

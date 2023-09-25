@@ -2,7 +2,7 @@ export const ArrayOfSkills = [
   {
     title: "Frontend Skills",
     skills: [
-      {
+      { 
         skillname: "Next.js",
         proficiency: "Experienced",
       },
@@ -39,7 +39,7 @@ export const ArrayOfSkills = [
       {
         skillname: "CSS 3",
         proficiency: "Experienced",
-      }
+      },
     ],
   },
   {
@@ -81,23 +81,68 @@ export const ArrayOfTools = [
   {
     title: "Deploy & Host Tools",
     tools: [
-      "Git (Deploy)",
-      "Jira",
-      "Elastic Beanstalk (Host)",
-      "CI/CD",
-      "AWS Amplify (Host)",
-      "Vercel",
+      {
+        toolname: "Git (Deploy)",
+        proficiency: "Experienced",
+      },
+      {
+        toolname: "Jira",
+        proficiency: "Experienced",
+      },
+      {
+        toolname: "Elastic Beanstalk (Host)",
+        proficiency:  "Experienced",
+      },
+      {
+        toolname: "CI/CD",
+        proficiency: "Experienced",
+      },
+      {
+        toolname: "AWS Amplify (Host)",
+        proficiency:  "Experienced",
+      },
+
+      {
+        toolname: "aws",
+        proficiency: "Intermediate",
+      },
+      {
+        toolname: "Vercel",
+        proficiency:  "Experienced",
+      },
     ],
   },
   {
     title: "Developer Tools",
     tools: [
-      "React DevTools",
-      "Redux DevTools",
-      "Google Chrome Debugger Tools",
-      "Postman",
-      "MongoDB Compass",
-      "MongoDB Shell",
+      {
+        toolname: "React DevTools",
+        proficiency: "Experienced",
+      },
+
+      {
+        toolname: "Redux DevTools",
+        proficiency: "Experienced",
+      },
+
+      {
+        toolname: "Google Chrome",
+        proficiency: "Experienced",
+      },
+
+      {
+        toolname: "Postman",
+        proficiency: "Experienced",
+      },
+
+      {
+        toolname: "MongoDB Compass",
+        proficiency: "Experienced",
+      },
+      {
+        toolname: "MongoDB Shell",
+        proficiency: "Experienced",
+      },
     ],
   },
 ];
