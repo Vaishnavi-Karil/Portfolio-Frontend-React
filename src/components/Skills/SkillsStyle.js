@@ -40,3 +40,8 @@ export const SkillElement = styled.div`
   padding: 1.2rem;
   text-align: left;
 `;
+
+
+export const ParaTypography = styled.p`
+color : rgb(85, 85, 85);
+font-size : 1.1rem;`

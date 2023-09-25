@@ -41,16 +41,16 @@ export const EducationDetails = styled.div`
 export const AboutHeader = styled.div`
 font-size : 2rem;`;
 
-export const Details = styled.div``;
+export const ExperienceDetails = styled.div``;
 
-export const ExperienceDetails = styled.div`
+export const Details = styled.div`
   margin: 1.9rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: space-around;
   color : rgb(85, 85, 85);
-  font-size : 1.4rem;
+  font-size : 1.2rem;
 `;
 
 export const EductionDetails = styled.div`
@@ -60,7 +60,6 @@ font-size : 1.4rem;`;
 export const IntenshipDetails = styled.div`
 display : flex; 
 flex-direction : column; 
-padding: 1rem ;
 `;
 
 export const FrontendExperience = styled.div`
@@ -68,3 +67,8 @@ export const FrontendExperience = styled.div`
 
 export const BackendExperience = styled.div``;
 
+export const AboutMeSummary = styled.div``;
+
+
+export const DetailsHeader = styled.p`
+`

@@ -9,6 +9,7 @@ import {
 import {
   CardDetails,
   CardDetailsContainer,
+  ParaTypography,
   RenderSkillContainer,
   SkillCardHeader,
   SkillElement,
@@ -17,7 +18,7 @@ import checkmark from "../../../assets/checkmark.png";
 import { ArrayOfSkills } from "@/app/data/constants";
 export const Skills = () => {
   return (
-    <CardContainer id ="skills">
+    <CardContainer id="skills">
       <CardHeadingContainer>
         <MoreInformation>Explore My</MoreInformation>
         <Heading1>Skills</Heading1>
@@ -30,10 +31,14 @@ export const Skills = () => {
               <SkillCardHeader>{title}</SkillCardHeader>
               <RenderSkillContainer>
                 {skills.map((skill) => {
+                  const { skillname, proficiency } = skill;
                   return (
                     <SkillElement key={skill}>
                       <Icon src={checkmark} alt="checkmark" />
-                      {skill}
+                      <div>
+                        <p>{skillname}</p>
+                        <ParaTypography> {proficiency}</ParaTypography>
+                      </div>
                     </SkillElement>
                   );
                 })}
