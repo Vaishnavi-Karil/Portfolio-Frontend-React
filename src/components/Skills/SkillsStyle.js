@@ -30,7 +30,6 @@ export const SkillCardHeader = styled.p`
 export const RenderSkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  // padding: 0rem 2.5rem;
 `;
 
 export const SkillElement = styled.div`
@@ -44,4 +43,5 @@ export const SkillElement = styled.div`
 
 export const ParaTypography = styled.p`
 color : rgb(85, 85, 85);
-font-size : 1.1rem;`
+font-size : 1.1rem;
+`;
