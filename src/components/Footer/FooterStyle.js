@@ -21,6 +21,7 @@ export const FooterNavigationContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
   }
 `;
 export const FooterLink = styled(Link)``;

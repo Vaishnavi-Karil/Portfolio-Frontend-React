@@ -10,7 +10,7 @@ export const CardDetails = styled.div`
 `;
 
 export const CardDetailsContainer = styled.div`
-  width: 49%;
+  flex: 1;
   border-radius: 3rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   padding: 0rem 1.5rem;

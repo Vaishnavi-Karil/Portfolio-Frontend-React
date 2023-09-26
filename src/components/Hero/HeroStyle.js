@@ -38,6 +38,10 @@ export const DescriptionContainer = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media screen and (max-width : 600px){
+    width : 100%;
+    margin-top: 1rem;
+  }
 `;
 
 export const ButtonContainer = styled.div`

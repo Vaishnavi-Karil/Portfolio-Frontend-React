@@ -2,12 +2,16 @@ import Image from "next/image";
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  display: flex;
-  flex-direction: row;
   width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 1.5rem;
+@media screen and (max-width: 600px){
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 `;
 
 export const ProfileImage = styled(Image)`

@@ -7,6 +7,9 @@ import { Footer } from '@/components/Footer';
 
 const Container = styled.div`
 margin : 0rem 10rem;
+@media only screen and (max-width : 600px){
+    margin: 0rem 0rem;
+  } 
 `;
 
   const metadata =  {
@@ -27,7 +30,7 @@ export default function RootLayout({ children }) {
           <Container>
           {children}
           </Container>
-          {/* <Footer/> */}
+          <Footer/>
           </StyledComponentsRegistry>
       </body>
     </html>

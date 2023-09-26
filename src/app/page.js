@@ -10,13 +10,13 @@ import { Tools } from "@/components/Tools";
 export default function Home() {
   return (
   <>
-    {/* <Hero/> */}
-    {/* <About/>
+    <Hero/>
+    <About/>
     <Skills/>
     <Tools/>
     <Experience/>
     <Projects/>
-    <Contact/> */}
+    <Contact/>
   </>
   )
 }

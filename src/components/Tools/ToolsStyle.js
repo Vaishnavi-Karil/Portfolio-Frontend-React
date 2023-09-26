@@ -3,14 +3,17 @@ import styled from "styled-components";
 export const CardDetails = styled.div`
   width: 100%;
   height: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
+  @media screen and (max-width : 600px){
+    flex-direction: column;
+  }
 `;
 
 export const CardDetailsContainer = styled.div`
-  width: 49%;
   border-radius: 3rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   padding: 0rem 1.5rem;
@@ -30,7 +33,6 @@ export const ToolCardHeader = styled.p`
 export const RenderToolContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-
 `;
 
 export const ToolElement = styled.div`
