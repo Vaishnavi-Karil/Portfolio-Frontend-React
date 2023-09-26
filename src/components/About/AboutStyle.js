@@ -7,11 +7,11 @@ export const AboutContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   gap: 1.5rem;
-@media screen and (max-width: 600px){
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 `;
 
 export const ProfileImage = styled(Image)`
@@ -22,8 +22,8 @@ export const Container = styled.div`
   height: auto;
   min-height: 20rem;
   border-radius: 10%;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff;
+  border: rgb(53, 53, 53) 1px solid;
+  /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
   padding: 1.9rem;
 `;
 
@@ -43,7 +43,8 @@ export const EducationDetails = styled.div`
 `;
 
 export const AboutHeader = styled.div`
-font-size : 2rem;`;
+  font-size: 2rem;
+`;
 
 export const ExperienceDetails = styled.div``;
 
@@ -53,26 +54,37 @@ export const Details = styled.div`
   flex-direction: column;
   gap: 2rem;
   justify-content: space-around;
-  color : rgb(85, 85, 85);
-  font-size : 1.2rem;
+  color: rgb(85, 85, 85);
+  font-size: 1.2rem;
 `;
 
 export const EductionDetails = styled.div`
-color : rgb(85, 85, 85);
-font-size : 1.4rem;`;
+  color: rgb(85, 85, 85);
+  font-size: 1.4rem;
+`;
 
 export const IntenshipDetails = styled.div`
-display : flex; 
-flex-direction : column; 
+  display: flex;
+  flex-direction: column;
 `;
 
-export const FrontendExperience = styled.div`
-`;
+export const FrontendExperience = styled.div``;
 
 export const BackendExperience = styled.div``;
 
-export const AboutMeSummary = styled.div``;
+export const AboutMeSummary = styled.div`
+  margin-bottom: 2.5rem;
+  color: black;
+  font-size: 1.3rem;
+  line-height: 160%;
+  text-align: center;
+  padding: 2rem 0rem;
+`;
 
+export const DetailsHeader = styled.p``;
 
-export const DetailsHeader = styled.p`
-`
+export const Strong = styled.strong`
+  color: black;
+  /* color: rgb(85, 85, 85); */
+  font-weight: bold;
+`;

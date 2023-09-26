@@ -19,7 +19,8 @@ import {
   IntenshipDetails,
   ProfileImage,
   TotalExperience,
-  DetailsHeader
+  DetailsHeader,
+  Strong
 } from "./AboutStyle";
 import { Img } from "@/app/data/images";
 
@@ -31,6 +32,9 @@ export const About = () => {
         <MoreInformation>Get To Know More</MoreInformation>
         <Heading1>About Me</Heading1>
       </CardHeadingContainer>
+      <AboutMeSummary>
+        Hello,  I'm <Strong>full-stack developer</Strong> with <Strong>3+ Years experiences of frontend React experience</Strong>  and <Strong>6 months of REST API's Developement experience</Strong> . I am enjoy developing websites or a web application using <Strong>Next.js</Strong>  and <Strong>Express</Strong>.
+      </AboutMeSummary>
       <AboutContainer>
         <TotalExperience>
           <Container>
@@ -39,11 +43,11 @@ export const About = () => {
               <AboutHeader>Experience</AboutHeader>
               <Details>
                 <FrontendExperience>
-                  <DetailsHeader> 3 Years</DetailsHeader>
+                  <DetailsHeader> 3+ Years</DetailsHeader>
                   <p>Frontend Experience</p>
                 </FrontendExperience>
                 <BackendExperience>
-                  <DetailsHeader> 8 + Months</DetailsHeader>
+                  <DetailsHeader> 6+ Months</DetailsHeader>
                   <p>Backend Experience</p>
                 </BackendExperience>
               </Details>
@@ -80,9 +84,7 @@ export const About = () => {
           </Container>
         </EducationDetails>
       </AboutContainer>
-      <AboutMeSummary>
-        
-      </AboutMeSummary>
+     
     </CardContainer>
   );
 };
