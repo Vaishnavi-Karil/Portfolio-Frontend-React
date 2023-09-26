@@ -22,8 +22,8 @@ export const Container = styled.div`
   height: auto;
   min-height: 20rem;
   border-radius: 10%;
-  /* padding: 3.5rem 1rem; */
   border: rgb(53, 53, 53) 0.1rem solid;
+  box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff;
   padding: 1.9rem;
 `;
 

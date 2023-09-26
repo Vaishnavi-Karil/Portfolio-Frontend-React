@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const CardDetails = styled.div`
   width: 100%;
   height: 100%;
-  /* flex-wrap: wrap; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,7 +14,8 @@ export const CardDetails = styled.div`
 
 export const CardDetailsContainer = styled.div`
   border-radius: 3rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
+  box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff;
   padding: 0rem 1.5rem;
 `;
 

@@ -12,7 +12,8 @@ export const CardDetails = styled.div`
 export const CardDetailsContainer = styled.div`
   flex: 1;
   border-radius: 3rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
+  box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff;
   padding: 0rem 1.5rem;
 `;
 
