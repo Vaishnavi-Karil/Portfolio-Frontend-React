@@ -62,10 +62,8 @@ palette : {
      secondary: "rgb(53, 53, 53)", 
      primary: "rgb(0, 0, 0)",
   }, 
-
     background : "#ffff", 
-    color : "rgb(0,0,0)"
-  
+    color : "rgb(0,0,0)",
  }
 };
 
