@@ -6,3 +6,6 @@ text-align: center;
 display : flex; 
 width : 100%;
 margin-bottom : 1.5rem;`
+
+
+ContactContainer.displayName ='ContactContainer';

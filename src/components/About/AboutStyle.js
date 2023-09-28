@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const StyledAboutContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -14,11 +14,16 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const ProfileImage = styled(Image)`
+StyledAboutContainer.displayName ='StyledAboutContainer';
+
+export const StyledProfileImage = styled(Image)`
   width: 1.5rem;
   height: 1.5rem;
 `;
-export const Container = styled.div`
+
+StyledProfileImage.displayName ='StyledProfileImage';
+
+export const StyledContainer = styled.div`
   height: auto;
   min-height: 20rem;
   border-radius: 10%;
@@ -27,28 +32,38 @@ export const Container = styled.div`
   padding: 1.9rem;
 `;
 
-export const TotalExperience = styled.div`
+StyledContainer.displayName ='StyledContainer';
+
+
+export const StyledTotalExperience = styled.div`
   width: 100%;
   min-height: 3vh;
 `;
 
-export const Intenship = styled.div`
+StyledTotalExperience.displayName ='StyledTotalExperience';
+
+export const StyledIntenship = styled.div`
   width: 100%;
   min-height: 3vh;
 `;
 
-export const EducationDetails = styled.div`
+StyledIntenship.displayName ='StyledIntenship';
+
+export const StyledEducationDetails = styled.div`
   width: 100%;
   min-height: 3vh;
 `;
-
-export const AboutHeader = styled.div`
+StyledEducationDetails.displayName ='StyledEducationDetails';
+export const StyledAboutHeader = styled.div`
   font-size: 2rem;
 `;
 
-export const ExperienceDetails = styled.div``;
+StyledAboutHeader.displayName =' StyledAboutHeader';
 
-export const Details = styled.div`
+export const StyledExperienceDetails = styled.div``;
+StyledExperienceDetails.displayName ='StyledExperienceDetails';
+
+export const StyledDetails = styled.div`
   margin: 1.9rem 0rem;
   display: flex;
   flex-direction: column;
@@ -57,22 +72,28 @@ export const Details = styled.div`
   color: rgb(85, 85, 85);
   font-size: 1.2rem;
 `;
+StyledDetails.displayName ='StyledDetails';
 
-export const EductionDetails = styled.div`
+export const StyledEductionDetails = styled.div`
   color: rgb(85, 85, 85);
   font-size: 1.4rem;
 `;
+StyledEductionDetails.displayName ='StyledEductionDetails';
 
-export const IntenshipDetails = styled.div`
+export const StyledIntenshipDetails = styled.div`
   display: flex;
   flex-direction: column;
 `;
+StyledIntenshipDetails.displayName ='StyledIntenshipDetails';
 
-export const FrontendExperience = styled.div``;
+export const StyledFrontendExperience = styled.div``;
+StyledFrontendExperience.displayName ='StyledFrontendExperience';
 
-export const BackendExperience = styled.div``;
+export const StyledBackendExperience = styled.div``;
 
-export const AboutMeSummary = styled.div`
+StyledBackendExperience.displayName ='StyledBackendExperience';
+
+export const StyledAboutMeSummary = styled.div`
   margin-bottom: 2.5rem;
   color: black;
   font-size: 1.3rem;
@@ -80,11 +101,16 @@ export const AboutMeSummary = styled.div`
   text-align: center;
   padding: 2rem 0rem;
 `;
+StyledAboutMeSummary.displayName ='StyledAboutMeSummary';
 
-export const DetailsHeader = styled.p``;
+export const StyledDetailsHeader = styled.p``;
 
-export const Strong = styled.strong`
+StyledDetailsHeader.displayName= 'StyledDetailsHeader';
+export const StyledStrong = styled.strong`
   color: black;
   /* color: rgb(85, 85, 85); */
   font-weight: bold;
+  padding: 0rem 0.5rem;
 `;
+
+StyledStrong.displayName = 'StyledStrong';

@@ -1,34 +1,34 @@
 import React, { useState } from "react";
 import {
-  Logo,
-  LogoContainer,
-  Menu,
-  NavItems,
-  NavLink,
-  NavbarContainer,
+  StyledLogo,
+  StyledLogoContainer,
+  StyledMenu,
+  StyledNavItems,
+  StyledNavLink,
+  StyledNavbarContainer,
 } from "./NavbarStyle";
 import { route } from "@/app/utils/routes";
-import {AiOutlineMenu} from 'react-icons/ai'
+import { AiOutlineMenu } from "react-icons/ai";
 export const Navbar = () => {
-  const [openMenuDrawer, setopenMenuDrawer] = useState(false)
+  const [openMenuDrawer, setopenMenuDrawer] = useState(false);
   return (
-    <NavbarContainer>
-      <LogoContainer>
-        <Logo href="/">Portfolio.</Logo>
-      </LogoContainer>
-     <Menu onClick = {() =>setopenMenuDrawer(!openMenuDrawer)}>
-     <AiOutlineMenu/>
-     </Menu>
-      <NavItems display={openMenuDrawer === true ? "flex" : "none"}>
+    <StyledNavbarContainer>
+      <StyledLogoContainer>
+        <StyledLogo href="/">Portfolio.</StyledLogo>
+      </StyledLogoContainer>
+      <StyledMenu onClick={() => setopenMenuDrawer(!openMenuDrawer)}>
+        <AiOutlineMenu />
+      </StyledMenu>
+      <StyledNavItems display={openMenuDrawer === true ? "flex" : "none"}>
         {route.map((pg, index) => {
           const { id, path, text } = pg;
           return (
-            <NavLink key={id} href={path}>
+            <StyledNavLink key={id} href={path}>
               {text}
-            </NavLink>
+            </StyledNavLink>
           );
         })}
-      </NavItems>
-    </NavbarContainer>
+      </StyledNavItems>
+    </StyledNavbarContainer>
   );
 };

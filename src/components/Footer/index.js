@@ -1,24 +1,28 @@
-import { route } from '@/app/utils/routes';
-import React from 'react'
-import { CopyRightContainer, FooterContainer, FooterLink, FooterNavigationContainer } from './FooterStyle';
+import { route } from "@/app/utils/routes";
+import React from "react";
+import {
+  StyledCopyRightContainer,
+  StyledFooterContainer,
+  StyledFooterLink,
+  StyledFooterNavigationContainer,
+} from "./FooterStyle";
 
 export const Footer = () => {
   return (
-    <FooterContainer>
-      <FooterNavigationContainer>
-      {route.map((pg, index) => {
+    <StyledFooterContainer>
+      <StyledFooterNavigationContainer>
+        {route.map((pg, index) => {
           const { id, path, component, text } = pg;
           return (
-            <FooterLink key={id} href={path}>
+            <StyledFooterLink key={id} href={path}>
               {text}
-            </FooterLink>
+            </StyledFooterLink>
           );
         })}
-      </FooterNavigationContainer>
-      <CopyRightContainer> 
-      Copyright © 2023 Vaishnavi Karil. All Rights Reserved
-      </CopyRightContainer>
-        
-    </FooterContainer>
-  )
-}
+      </StyledFooterNavigationContainer>
+      <StyledCopyRightContainer>
+        Copyright © 2023 Vaishnavi Karil. All Rights Reserved
+      </StyledCopyRightContainer>
+    </StyledFooterContainer>
+  );
+};

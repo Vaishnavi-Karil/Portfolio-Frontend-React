@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+export const StyledHeroContainer = styled.div`
   /* height: 80vh; */
   text-align: center;
   display: flex;
@@ -14,12 +14,15 @@ export const HeroContainer = styled.div`
     align-items: center;
   }
 `;
+StyledHeroContainer.displayName =' StyledHeroContainer';
 
-export const ImageContainer = styled.div`
+
+export const StyledImageContainer = styled.div`
   flex: 1;
 `;
 
-export const ProfileImage = styled(Image)`
+StyledImageContainer.displayName = 'StyledImageContainer';
+export const StyledProfileImage = styled(Image)`
   flex: 1;
   border: transparent;
   border-radius: 60%;
@@ -31,23 +34,29 @@ export const ProfileImage = styled(Image)`
   }
 `;
 
-export const DescriptionContainer = styled.div`
+StyledProfileImage.displayName = 'StyledProfileImage';
+
+export const StyledDescriptionContainer = styled.div`
   width: 51%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  @media screen and (max-width : 600px){
-    width : 100%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
     margin-top: 1rem;
   }
 `;
 
-export const ButtonContainer = styled.div`
+StyledDescriptionContainer.displayName = 'StyledDescriptionContainer';
+
+export const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 1rem;
   margin-top: 1rem;
 `;
+
+StyledButtonContainer.displayName = 'StyledButtonContainer';

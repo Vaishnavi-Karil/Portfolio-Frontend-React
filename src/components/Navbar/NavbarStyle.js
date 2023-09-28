@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-export const NavbarContainer = styled.div`
+export const StyledNavbarContainer = styled.div`
   height: 17vh;
   display: flex;
   flex-direction: row;
@@ -9,32 +9,36 @@ export const NavbarContainer = styled.div`
   align-items: center;
   text-align: center;
   margin: 0rem 10rem;
-  
-  @media only screen and (max-width : 600px){
+
+  @media only screen and (max-width: 600px) {
     margin: 0rem 2rem;
   }
-
 `;
-export const LogoContainer = styled.div`
-/* display : flex; */
- 
-`
+StyledNavbarContainer.displayName = 'StyledNavbarContainer'
+export const StyledLogoContainer = styled.div``;
 
-export const Logo = styled(Link)`
-font-size : 2rem;`;
+StyledLogoContainer.displayName = 'StyledLogoContainer';
 
-export const WebsiteName = styled(Link)``;
+export const StyledLogo = styled(Link)`
+  font-size: 2rem;
+`;
 
-export const NavItems = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-gap: 2.5rem;
-font-size : 1.4rem; 
-font-family: "Poppins", sans-serif;
-position: relative;
+StyledLogo.displayName = 'StyledLogo';
 
-@media only screen and (max-width : 600px){
+export const StyledWebsiteName = styled(Link)``;
+
+StyledWebsiteName.displayName = 'StyledWebsiteName';
+
+export const StyledNavItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+
+  @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -47,18 +51,22 @@ position: relative;
     top: 4.5rem;
     width: 13rem;
     padding: 1rem 2rem;
-    display:  ${(props) => props.display };
-}
+    display: ${(props) => props.display};
+  }
 `;
 
-export const NavLink = styled(Link)``;
+StyledNavItems.displayName ='StyledNavItems';
 
+export const StyledNavLink = styled(Link)``;
 
+StyledNavLink.displayName = 'StyledNavLink';
 
-export const Menu = styled.button`
-display: none;
+export const StyledMenu = styled.button`
+  display: none;
 
-@media only screen and (max-width: 600px){
-display: block;
-}`; 
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+`;
 
+StyledMenu.displayName = 'StyledMenu';
