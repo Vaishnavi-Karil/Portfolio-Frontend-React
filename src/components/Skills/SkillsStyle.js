@@ -1,24 +1,34 @@
 import styled from "styled-components";
 
-export const CardDetails = styled.div`
+export const StyledCardDetails = styled.div`
   width: 100%;
   height: 100%;
-  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+
+  @media only screen and (max-width : 600px){
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 `;
 
-export const CardDetailsContainer = styled.div`
+StyledCardDetails.displayName='StyledCardDetails';
+
+export const StyledCardDetailsContainer = styled.div`
   flex: 1;
   border-radius: 3rem;
-  border: rgb(53, 53, 53) 1px solid;
-  /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
+  border:  ${({theme})=> theme.text.borderColor} 1px solid;
+  /* box-shadow: 22px 22px 45px #181b23, -22px -22px 45px #181b23; */
+  box-shadow: ${({theme}) => theme.boxShadow};
+  background : ${({theme}) => theme.cardBg};
   padding: 0rem 1.5rem;
 `;
+StyledCardDetailsContainer.displayName = 'StyledCardDetailsContainer';
 
-export const SkillCardHeader = styled.p`
-  color: rgb(85, 85, 85);
+export const StyledSkillCardHeader = styled.p`
+   color: ${({theme}) => theme.text.textColor};
   font-weight: 700;
   font-size: 2rem;
   line-height: 3.8rem;
@@ -28,17 +38,19 @@ export const SkillCardHeader = styled.p`
   font-family: "Poppins", sans-serif;
 `;
 
-export const RenderSkillContainer = styled.div`
+StyledSkillCardHeader.displayName ='StyledSkillCardHeader'
+
+
+export const StyledRenderSkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
+StyledRenderSkillContainer.displayName = 'StyledRenderSkillContainer'
 
-export const SkillElement = styled.div`
+export const StyledSkillElement = styled.div`
   width: 50%;
   display: flex;
   gap: 1rem;
   padding: 1.2rem;
   text-align: left;
 `;
-
-

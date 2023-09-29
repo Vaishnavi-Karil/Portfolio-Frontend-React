@@ -1,43 +1,44 @@
 import React from "react";
 import {
-  ButtonContainer,
-  DescriptionContainer,
-  HeroContainer,
-  ImageContainer,
-  ProfileImage,
+  StyledButtonContainer,
+  StyledDescriptionContainer,
+  StyledHeroContainer,
+  StyledImageContainer,
+  StyledProfileImage,
 } from "./HeroStyle";
 import { Img } from "@/app/data/images";
 import {
-  ButtongGreyBg,
-  DisplayPdfBlackPage,
-  Heading1,
-  Heading3,
-  Heading6
+  StyledButtongGreyBg,
+  StyledDisplayPdfBlackPage,
+  StyledHeading1,
+  StyledHeading3,
+  StyledHeading6,
 } from "@/styles/Styles";
 
 export const Hero = () => {
   const { profile_pic } = Img;
   return (
-    <HeroContainer>
-      <ImageContainer>
-        <ProfileImage src={profile_pic} alt={profile_pic} />
-      </ImageContainer>
-      <DescriptionContainer>
-        <Heading6>Hello, I'm </Heading6>
-        <Heading1>Vaishnavi Karil</Heading1>
-        <Heading3>Full Stack Developer</Heading3>
-        <ButtonContainer>
-    
-          <DisplayPdfBlackPage
-            href='/fullstackdeveloper.pdf'
+    <StyledHeroContainer>
+      <StyledImageContainer>
+        <StyledProfileImage src={profile_pic} alt={profile_pic} />
+      </StyledImageContainer>
+      <StyledDescriptionContainer>
+        <StyledHeading6>Hello, I'm </StyledHeading6>
+        <StyledHeading1>Vaishnavi Karil</StyledHeading1>
+        <StyledHeading3>Full Stack Developer</StyledHeading3>
+        <StyledButtonContainer>
+          <StyledDisplayPdfBlackPage
+            href="/fullstackdeveloper.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
             Download Resume
-          </DisplayPdfBlackPage>
-          <ButtongGreyBg href ="/#contact">Contact Info</ButtongGreyBg>
-        </ButtonContainer>
-      </DescriptionContainer>
-    </HeroContainer>
+          </StyledDisplayPdfBlackPage>
+          <StyledButtongGreyBg href="/#contact">
+            Contact Info
+          </StyledButtongGreyBg>
+        </StyledButtonContainer>
+      </StyledDescriptionContainer>
+    </StyledHeroContainer>
   );
 };

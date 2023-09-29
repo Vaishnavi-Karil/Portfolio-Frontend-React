@@ -1,14 +1,15 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-export const FooterContainer = styled.div`
+export const StyledFooterContainer = styled.div`
   height: 32vh;
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
 `;
+StyledFooterContainer.displayName ='StyledFooterContainer';
 
-export const FooterNavigationContainer = styled.div`
+export const StyledFooterNavigationContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1.8rem;
@@ -24,10 +25,17 @@ export const FooterNavigationContainer = styled.div`
     height: auto;
   }
 `;
-export const FooterLink = styled(Link)``;
 
-export const CopyRightContainer = styled.div`
+StyledFooterNavigationContainer.displayName ='StyledFooterNavigationContainer';
+export const StyledFooterLink = styled(Link)``;
+
+
+StyledFooterLink.displayName = 'StyledFooterLink';
+
+export const StyledCopyRightContainer = styled.div`
   text-align: center;
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-size: 1.2rem;
 `;
+
+StyledCopyRightContainer.displayName = 'StyledCopyRightContainer';

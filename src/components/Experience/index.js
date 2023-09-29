@@ -1,14 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import { CardContainer, CardHeadingContainer, Heading1, MoreInformation } from '@/styles/Styles'
+import {
+  StyledCardContainer,
+  StyledCardHeadingContainer,
+  StyledHeading1,
+  StyledMoreInformation,
+} from "@/styles/Styles";
 
 export const Experience = () => {
   return (
-    <CardContainer id ="experience">
-      <CardHeadingContainer>
-      <MoreInformation>Explore My</MoreInformation>
-        <Heading1>Experience</Heading1>
-      </CardHeadingContainer>
-    </CardContainer>
-  )
-}
+    <StyledCardContainer id="experience">
+      <StyledCardHeadingContainer>
+        <StyledMoreInformation>Explore My</StyledMoreInformation>
+        <StyledHeading1>Experience</StyledHeading1>
+      </StyledCardHeadingContainer>
+    </StyledCardContainer>
+  );
+};

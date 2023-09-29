@@ -1,13 +1,18 @@
-import React from 'react'
-import { CardContainer, CardHeadingContainer, Heading1, MoreInformation } from '@/styles/Styles';
+import React from "react";
+import {
+  StyledCardContainer,
+  StyledCardHeadingContainer,
+  StyledHeading1,
+  StyledMoreInformation,
+} from "@/styles/Styles";
 
 export const Contact = () => {
   return (
-    <CardContainer id ="contact">
-      <CardHeadingContainer>
-      <MoreInformation>Get In Touch</MoreInformation>
-        <Heading1>Contact Me</Heading1>
-      </CardHeadingContainer>
-    </CardContainer>
-  )
-}
+    <StyledCardContainer id="contact">
+      <StyledCardHeadingContainer>
+        <StyledMoreInformation>Get In Touch</StyledMoreInformation>
+        <StyledHeading1>Contact Me</StyledHeading1>
+      </StyledCardHeadingContainer>
+    </StyledCardContainer>
+  );
+};

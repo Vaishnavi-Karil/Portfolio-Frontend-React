@@ -1,52 +1,54 @@
 import React from "react";
 import {
-  CardContainer,
-  CardHeadingContainer,
-  Heading1,
-  Icon,
-  MoreInformation,
-  ParaTypography,
+  StyledCardContainer,
+  StyledCardHeadingContainer,
+  StyledHeading1,
+  StyledIcon,
+  StyledMoreInformation,
+  StyledParaTypography,
 } from "@/styles/Styles";
 import {
-  CardDetails,
-  CardDetailsContainer,
-  RenderToolContainer,
-  ToolCardHeader,
-  ToolElement,
+  StyledCardDetails,
+  StyledCardDetailsContainer,
+  StyledRenderToolContainer,
+  StyledToolBarHeader,
+  StyledToolElement,
 } from "./ToolsStyle";
 import checkmark from "../../../assets/checkmark.png";
 import { ArrayOfTools } from "@/app/data/constants";
 export const Tools = () => {
   return (
-    <CardContainer id ="tools">
-      <CardHeadingContainer>
-        <MoreInformation>Explore My </MoreInformation>
-        <Heading1>Tools</Heading1>
-      </CardHeadingContainer>
-      <CardDetails>
+    <StyledCardContainer id="tools">
+      <StyledCardHeadingContainer>
+        <StyledMoreInformation>Explore My </StyledMoreInformation>
+        <StyledHeading1>Tools</StyledHeading1>
+      </StyledCardHeadingContainer>
+      <StyledCardDetails>
         {ArrayOfTools.map((element, index) => {
           const { title, tools } = element;
           return (
-            <CardDetailsContainer key={index}>
-              <ToolCardHeader>{title}</ToolCardHeader>
-              <RenderToolContainer>
+            <StyledCardDetailsContainer key={index}>
+              <StyledToolBarHeader>{title}</StyledToolBarHeader>
+              <StyledRenderToolContainer>
                 {tools.map((Tool) => {
-                   const { toolname, proficiency } = Tool;
+                  const { toolname, proficiency } = Tool;
                   return (
-                    <ToolElement key={Tool}>
-                      <Icon src={checkmark} alt="checkmark" />
+                    <StyledToolElement key={Tool}>
+                      <StyledIcon src={checkmark} alt="checkmark" />
                       <div>
                         <p>{toolname}</p>
-                        <ParaTypography> {proficiency}</ParaTypography>
+                        <StyledParaTypography>
+                          {proficiency}
+                        </StyledParaTypography>
                       </div>
-                    </ToolElement>
+                    </StyledToolElement>
                   );
                 })}
-              </RenderToolContainer>
-            </CardDetailsContainer>
+              </StyledRenderToolContainer>
+            </StyledCardDetailsContainer>
           );
         })}
-      </CardDetails>
-    </CardContainer>
+      </StyledCardDetails>
+    </StyledCardContainer>
   );
 };

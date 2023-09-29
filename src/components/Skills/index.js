@@ -1,52 +1,54 @@
 import React from "react";
 import {
-  CardContainer,
-  CardHeadingContainer,
-  Heading1,
-  Icon,
-  MoreInformation,
-  ParaTypography,
+  StyledCardContainer,
+  StyledCardHeadingContainer,
+  StyledHeading1,
+  StyledIcon,
+  StyledMoreInformation,
+  StyledParaTypography,
 } from "@/styles/Styles";
 import {
-  CardDetails,
-  CardDetailsContainer,
-  RenderSkillContainer,
-  SkillCardHeader,
-  SkillElement,
+  StyledCardDetails,
+  StyledCardDetailsContainer,
+  StyledRenderSkillContainer,
+  StyledSkillCardHeader,
+  StyledSkillElement,
 } from "./SkillsStyle";
 import checkmark from "../../../assets/checkmark.png";
 import { ArrayOfSkills } from "@/app/data/constants";
 export const Skills = () => {
   return (
-    <CardContainer id="skills">
-      <CardHeadingContainer>
-        <MoreInformation>Explore My</MoreInformation>
-        <Heading1>Skills</Heading1>
-      </CardHeadingContainer>
-      <CardDetails>
+    <StyledCardContainer id="skills">
+      <StyledCardHeadingContainer>
+        <StyledMoreInformation>Explore My</StyledMoreInformation>
+        <StyledHeading1>Skills</StyledHeading1>
+      </StyledCardHeadingContainer>
+      <StyledCardDetails>
         {ArrayOfSkills.map((element, index) => {
           const { title, skills } = element;
           return (
-            <CardDetailsContainer key={index}>
-              <SkillCardHeader>{title}</SkillCardHeader>
-              <RenderSkillContainer>
+            <StyledCardDetailsContainer key={index}>
+              <StyledSkillCardHeader>{title}</StyledSkillCardHeader>
+              <StyledRenderSkillContainer>
                 {skills.map((skill, index) => {
                   const { skillname, proficiency } = skill;
                   return (
-                    <SkillElement key={index}>
-                      <Icon src={checkmark} alt="checkmark" />
+                    <StyledSkillElement key={index}>
+                      <StyledIcon src={checkmark} alt="checkmark" />
                       <div>
                         <p>{skillname}</p>
-                        <ParaTypography> {proficiency}</ParaTypography>
+                        <StyledParaTypography>
+                          {proficiency}
+                        </StyledParaTypography>
                       </div>
-                    </SkillElement>
+                    </StyledSkillElement>
                   );
                 })}
-              </RenderSkillContainer>
-            </CardDetailsContainer>
+              </StyledRenderSkillContainer>
+            </StyledCardDetailsContainer>
           );
         })}
-      </CardDetails>
-    </CardContainer>
+      </StyledCardDetails>
+    </StyledCardContainer>
   );
 };
