@@ -3,10 +3,15 @@ import styled from "styled-components";
 export const StyledCardDetails = styled.div`
   width: 100%;
   height: 100%;
-  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+
+  @media only screen and (max-width : 600px){
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 `;
 
 StyledCardDetails.displayName='StyledCardDetails';

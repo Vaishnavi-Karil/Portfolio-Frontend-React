@@ -34,12 +34,7 @@ export default function RootLayout({ children }) {
         <body>
           <StyledComponentsRegistry theme={currentTheme}>
             <GlobalStyles theme={themes[currentTheme]} />
-            <button onClick={() => setcurrentTheme("naviBlueTheme")}>
-              Navi Blue
-            </button>
-            <button onClick={() => setcurrentTheme("grayTheme")}>Gray</button>
-            <button onClick={() => setcurrentTheme("lightTheme")}>light</button>
-            <Navbar setcurrentTheme={setcurrentTheme} />
+            <Navbar themes = {themes}  currentTheme ={currentTheme} setcurrentTheme={setcurrentTheme} />
             <Container>{children}</Container>
             <Footer />
           </StyledComponentsRegistry>

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import {
+  GrayTheme,
+  NaviBlueTheme,
+  StyledButtonTheme,
   StyledLogo,
   StyledLogoContainer,
   StyledMenu,
@@ -9,8 +12,11 @@ import {
 } from "./NavbarStyle";
 import { route } from "@/app/utils/routes";
 import { AiOutlineMenu } from "react-icons/ai";
-export const Navbar = () => {
+export const Navbar = ({ themes, currentTheme, setcurrentTheme }) => {
   const [openMenuDrawer, setopenMenuDrawer] = useState(false);
+  for(let theme_name in themes){
+   
+  }
   return (
     <StyledNavbarContainer>
       <StyledLogoContainer>
@@ -28,6 +34,10 @@ export const Navbar = () => {
             </StyledNavLink>
           );
         })}
+      {console.log('currentTheme is..', currentTheme)}
+    
+        <NaviBlueTheme onClick={() => setcurrentTheme("naviBlueTheme")}/>
+        <GrayTheme onClick={() => setcurrentTheme("grayTheme")}/>
       </StyledNavItems>
     </StyledNavbarContainer>
   );

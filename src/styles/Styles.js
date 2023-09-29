@@ -66,24 +66,26 @@ export const StyledDisplayPdfBlackPage = styled.a`
   font-size: 0.8rem;
   font-weight: 600;
   width: 10rem;
-  &:hover {
-    background:  ${({theme})=> theme.text.borderColor};;
-    color:  ${({theme})=> theme.common.textColor};
+  &:hover {  
+    color:   ${({theme})=> theme.bg.bgColor};
+    background: ${({theme})=> theme.bg.bgTextColor};
+    border: 1px solid transparent;
   }
 `;
-StyledDisplayPdfBlackPage.displayName = 'StyledDisplayPdfBlackPage'
+StyledDisplayPdfBlackPage.displayName = 'StyledDisplayPdfBlackPage';
+
 export const StyledButtongGreyBg = styled(Link)`
-  background:  ${({theme})=> theme.text.borderColor};;
+  background:  ${({theme})=> theme.text.borderColor};
   padding: 1rem;
   border: 1px solid transparent;
   border-radius: 1.4rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color:  ${({theme})=> theme.common.textColor};
+  color: white;
   width: 10rem;
-
   &:hover {
-    background:${({theme})=> theme.common.textColor};
+    color : ${({theme}) => theme.bg.bgColor};
+    background:${({theme})=> theme.bg.bgTextColor};
   }
 `;
 

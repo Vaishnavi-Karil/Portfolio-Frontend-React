@@ -63,6 +63,8 @@ StyledNavLink.displayName = 'StyledNavLink';
 
 export const StyledMenu = styled.button`
   display: none;
+  width : 2.5rem; 
+  height: 2.5rem;
 
   @media only screen and (max-width: 600px) {
     display: block;
@@ -70,3 +72,20 @@ export const StyledMenu = styled.button`
 `;
 
 StyledMenu.displayName = 'StyledMenu';
+
+
+export const NaviBlueTheme = styled.button`
+background: #0f172a;
+border-radius: 30%;
+width: 2rem;
+height: 2rem;`
+
+NaviBlueTheme.displayName = 'StyledButtonTheme';
+
+export const GrayTheme = styled.button`
+background: rgb(53, 53, 53);
+border-radius: 30%;
+width: 2rem;
+height: 2rem;`; 
+
+GrayTheme.displayName = 'GrayTheme';

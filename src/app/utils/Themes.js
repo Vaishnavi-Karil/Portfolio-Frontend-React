@@ -26,7 +26,7 @@ export const themes = {
   grayTheme : {
     common : {
       bgColor : "rgb(0, 0, 0)",
-      textColor :  "#ffff",
+      textColor :  "#ffff",      
      }, 
     bg : {
      bgTextColor : "rgb(0, 0, 0)", 
@@ -37,18 +37,4 @@ export const themes = {
      borderColor  : "rgb(53, 53, 53)",
     }, 
   },
-  lightTheme : {
-    common : {
-     bgColor : "rgb(0, 0, 0)",
-     textColor :  "#ffff",
-    }, 
-   bg : {
-    bgTextColor : "rgb(0, 0, 0)", 
-    bgColor : "#e0e0e0",
-   }, 
-   text : {
-    textColor : "rgb(85, 85, 85)",
-    borderColor  : "rgb(53, 53, 53)",
-   }, 
-  }
 };

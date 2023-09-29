@@ -19,6 +19,8 @@ StyledAboutContainer.displayName ='StyledAboutContainer';
 export const StyledProfileImage = styled(Image)`
   width: 1.5rem;
   height: 1.5rem;
+  background: ${({theme}) => theme.text.borderColor};
+  border-radius : 25%;
 `;
 
 StyledProfileImage.displayName ='StyledProfileImage';
