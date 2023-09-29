@@ -4,21 +4,22 @@ import styled from "styled-components";
 
 export const StyledHeading1 = styled.p`
   font-size: 3.8rem;
-  color: black;
+  color:  ${({theme})=> theme.common.bgColor};
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 `;
 StyledHeading1.displayName = 'StyledHeading1';
 
 export const StyledHeading6 = styled.p`
-  color: rgb(85, 85, 85);
+  /* color: rgb(85, 85, 85); */
+  color: ${({theme}) => theme.text.textColor};
   font-weight: 600;
   font-size: 1.5rem;
 `;
 StyledHeading6.displayName = 'StyledHeading6';
 
 export const StyledHeading3 = styled.p`
-  color: rgb(85, 85, 85);
+  color: ${({theme}) => theme.text.textColor};
   font-weight: 600;
   font-size: 2rem;
   line-height: 3.8rem;
@@ -28,7 +29,7 @@ export const StyledHeading3 = styled.p`
 StyledHeading3.displayName = 'StyledHeading3';
 
 export const StyledMoreInformation = styled.p`
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-size: 1.2rem;
 `;
 StyledMoreInformation.displayName = 'StyledMoreInformation'
@@ -56,49 +57,33 @@ export const StyledCardHeadingContainer = styled.div`
 
 StyledCardHeadingContainer.displayName = 'StyledCardHeadingContainer';
 
-export const StyledButtonTransparentBg = styled(Link)`
-  background: transparent;
-  color: rgb(0, 0, 0);
-  padding: 1rem;
-  border: 1px solid black;
-  border-radius: 1.4rem;
-  font-weight: 600;
-  &:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-  }
-`;
-
-StyledButtonTransparentBg.displayName = 'StyledButtonTransparentBg';
-
-
 export const StyledDisplayPdfBlackPage = styled.a`
   background: transparent;
-  color: rgb(0, 0, 0);
+  color : ${({theme})=> theme.common.bgTextColor};
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid  ${({theme})=> theme.common.bgColor};
   border-radius: 1.4rem;
   font-size: 0.8rem;
   font-weight: 600;
   width: 10rem;
   &:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+    background:  ${({theme})=> theme.text.borderColor};;
+    color:  ${({theme})=> theme.common.textColor};
   }
 `;
 StyledDisplayPdfBlackPage.displayName = 'StyledDisplayPdfBlackPage'
 export const StyledButtongGreyBg = styled(Link)`
-  background: rgb(53, 53, 53);
+  background:  ${({theme})=> theme.text.borderColor};;
   padding: 1rem;
   border: 1px solid transparent;
   border-radius: 1.4rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: white;
+  color:  ${({theme})=> theme.common.textColor};
   width: 10rem;
 
   &:hover {
-    background: rgb(0, 0, 0);
+    background:${({theme})=> theme.common.textColor};
   }
 `;
 
@@ -113,7 +98,7 @@ export const StyledIcon = styled(Image)`
 StyledIcon.displayName ='StyledIcon';
 
 export const StyledParaTypography = styled.p`
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-size: 1.1rem;
 `;
 

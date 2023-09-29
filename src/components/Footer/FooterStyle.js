@@ -34,7 +34,7 @@ StyledFooterLink.displayName = 'StyledFooterLink';
 
 export const StyledCopyRightContainer = styled.div`
   text-align: center;
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-size: 1.2rem;
 `;
 

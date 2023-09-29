@@ -27,7 +27,7 @@ export const StyledContainer = styled.div`
   height: auto;
   min-height: 20rem;
   border-radius: 10%;
-  border: rgb(53, 53, 53) 1px solid;
+  border:  ${({theme})=> theme.text.borderColor} 1px solid;
   /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
   padding: 1.9rem;
 `;
@@ -58,7 +58,7 @@ export const StyledAboutHeader = styled.div`
   font-size: 2rem;
 `;
 
-StyledAboutHeader.displayName =' StyledAboutHeader';
+StyledAboutHeader.displayName = 'StyledAboutHeader';
 
 export const StyledExperienceDetails = styled.div``;
 StyledExperienceDetails.displayName ='StyledExperienceDetails';
@@ -69,46 +69,46 @@ export const StyledDetails = styled.div`
   flex-direction: column;
   gap: 2rem;
   justify-content: space-around;
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-size: 1.2rem;
 `;
-StyledDetails.displayName ='StyledDetails';
+StyledDetails.displayName = 'StyledDetails';
 
 export const StyledEductionDetails = styled.div`
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-size: 1.4rem;
 `;
-StyledEductionDetails.displayName ='StyledEductionDetails';
+StyledEductionDetails.displayName = 'StyledEductionDetails';
 
 export const StyledIntenshipDetails = styled.div`
   display: flex;
   flex-direction: column;
 `;
-StyledIntenshipDetails.displayName ='StyledIntenshipDetails';
+StyledIntenshipDetails.displayName = 'StyledIntenshipDetails';
 
 export const StyledFrontendExperience = styled.div``;
-StyledFrontendExperience.displayName ='StyledFrontendExperience';
+StyledFrontendExperience.displayName = 'StyledFrontendExperience';
 
 export const StyledBackendExperience = styled.div``;
 
-StyledBackendExperience.displayName ='StyledBackendExperience';
+StyledBackendExperience.displayName = 'StyledBackendExperience';
 
 export const StyledAboutMeSummary = styled.div`
   margin-bottom: 2.5rem;
-  color: black;
+  color:  ${({theme})=> theme.text.bgColor};
   font-size: 1.3rem;
   line-height: 160%;
   text-align: center;
   padding: 2rem 0rem;
 `;
-StyledAboutMeSummary.displayName ='StyledAboutMeSummary';
+StyledAboutMeSummary.displayName = 'StyledAboutMeSummary';
 
 export const StyledDetailsHeader = styled.p``;
 
-StyledDetailsHeader.displayName= 'StyledDetailsHeader';
+StyledDetailsHeader.displayName = 'StyledDetailsHeader';
 export const StyledStrong = styled.strong`
-  color: black;
-  /* color: rgb(85, 85, 85); */
+  color:  ${({theme})=> theme.common.bgColor};
+  /*  color: ${({theme}) => theme.text.textColor}; */
   font-weight: bold;
   padding: 0rem 0.5rem;
 `;

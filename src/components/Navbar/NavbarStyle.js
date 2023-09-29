@@ -43,7 +43,7 @@ export const StyledNavItems = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 1rem;
-    background: #e0e0e0;
+    background: ${({theme})=> theme.bg.bgColor};
     box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff;
     position: absolute;
     flex: 1;

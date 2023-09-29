@@ -14,14 +14,14 @@ StyledCardDetails.displayName='StyledCardDetails';
 export const StyledCardDetailsContainer = styled.div`
   flex: 1;
   border-radius: 3rem;
-  border: rgb(53, 53, 53) 1px solid;
+  border:  ${({theme})=> theme.text.borderColor} 1px solid;
   /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
   padding: 0rem 1.5rem;
 `;
 StyledCardDetailsContainer.displayName = 'StyledCardDetailsContainer';
 
 export const StyledSkillCardHeader = styled.p`
-  color: rgb(85, 85, 85);
+   color: ${({theme}) => theme.text.textColor};
   font-weight: 700;
   font-size: 2rem;
   line-height: 3.8rem;

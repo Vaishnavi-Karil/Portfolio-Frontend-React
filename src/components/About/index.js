@@ -39,11 +39,11 @@ export const About = () => {
         </StyledStrong>
         and
         <StyledStrong>
-           6 months of REST API's Developement experience
+           6 months of REST API's Developement experience.
         </StyledStrong>
-        . I am enjoy developing websites or a web application using
+        I am enjoy developing websites or a web application using
         <StyledStrong> Next.js</StyledStrong> and
-        <StyledStrong> Express</StyledStrong>.
+        <StyledStrong> Express.</StyledStrong>
       </StyledAboutMeSummary>
       <StyledAboutContainer>
         <StyledTotalExperience>

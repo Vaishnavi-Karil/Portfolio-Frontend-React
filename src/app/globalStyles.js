@@ -14,8 +14,8 @@ a {
 }
 body{
     font-size: 1.4rem;
-    background-color: ${({ theme }) => theme.palette.main.background};
-    color :${({ theme }) => theme.palette.main.color};
+    background-color: ${({ theme }) => theme.bg.bgColor};
+    color :${({ theme }) => theme.bg.bgTextColor };
 }
 
 button {
