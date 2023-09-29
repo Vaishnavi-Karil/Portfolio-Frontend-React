@@ -6,8 +6,8 @@ export const StyledNavbarContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   text-align: center;
+  align-items: center;
   margin: 0rem 10rem;
 
   @media only screen and (max-width: 600px) {
@@ -73,19 +73,12 @@ export const StyledMenu = styled.button`
 
 StyledMenu.displayName = 'StyledMenu';
 
-
-export const NaviBlueTheme = styled.button`
-background: #0f172a;
+export const ThemeButton = styled.button`
+background: ${(props) => props.themeBgColor};
 border-radius: 30%;
 width: 2rem;
 height: 2rem;`
 
-NaviBlueTheme.displayName = 'StyledButtonTheme';
+ThemeButton.displayName = 'ThemeButton';
 
-export const GrayTheme = styled.button`
-background: rgb(53, 53, 53);
-border-radius: 30%;
-width: 2rem;
-height: 2rem;`; 
 
-GrayTheme.displayName = 'GrayTheme';

@@ -18,6 +18,8 @@ export const StyledCardDetailsContainer = styled.div`
   border-radius: 3rem;
   border:  ${({theme})=> theme.text.borderColor} 1px solid;
   /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
+  box-shadow: ${({theme}) => theme.boxShadow};
+  background : ${({theme}) => theme.cardBg};
   padding: 0rem 1.5rem;
 `;
 

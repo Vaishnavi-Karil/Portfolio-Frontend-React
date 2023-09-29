@@ -30,7 +30,9 @@ export const StyledContainer = styled.div`
   min-height: 20rem;
   border-radius: 10%;
   border:  ${({theme})=> theme.text.borderColor} 1px solid;
-  /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
+ 
+  box-shadow: ${({theme}) => theme.boxShadow};
+  background: ${({theme}) => theme.cardBg};
   padding: 1.9rem;
 `;
 

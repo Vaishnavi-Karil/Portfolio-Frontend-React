@@ -66,6 +66,7 @@ export const StyledDisplayPdfBlackPage = styled.a`
   font-size: 0.8rem;
   font-weight: 600;
   width: 10rem;
+  box-shadow: ${({theme}) => theme.boxShadow};
   &:hover {  
     color:   ${({theme})=> theme.bg.bgColor};
     background: ${({theme})=> theme.bg.bgTextColor};

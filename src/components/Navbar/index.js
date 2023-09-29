@@ -9,14 +9,18 @@ import {
   StyledNavItems,
   StyledNavLink,
   StyledNavbarContainer,
+  ThemeButton,
 } from "./NavbarStyle";
 import { route } from "@/app/utils/routes";
 import { AiOutlineMenu } from "react-icons/ai";
-export const Navbar = ({ themes, currentTheme, setcurrentTheme }) => {
+export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
   const [openMenuDrawer, setopenMenuDrawer] = useState(false);
-  for(let theme_name in themes){
-   
-  }
+  let renderColorThemeButton = []
+ for(let theme_name in theme){
+   if((theme_name !== currentTheme) && (renderColorThemeButton.includes(currentTheme) === false)){
+    renderColorThemeButton.push(theme_name);
+   }
+ }
   return (
     <StyledNavbarContainer>
       <StyledLogoContainer>
@@ -34,10 +38,7 @@ export const Navbar = ({ themes, currentTheme, setcurrentTheme }) => {
             </StyledNavLink>
           );
         })}
-      {console.log('currentTheme is..', currentTheme)}
-    
-        <NaviBlueTheme onClick={() => setcurrentTheme("naviBlueTheme")}/>
-        <GrayTheme onClick={() => setcurrentTheme("grayTheme")}/>
+      {renderColorThemeButton.map((element, index) => <ThemeButton key ={element} themeBgColor = {theme[element].themeBgColor} onClick = {() => setcurrentTheme(element.toString())} />)}
       </StyledNavItems>
     </StyledNavbarContainer>
   );
