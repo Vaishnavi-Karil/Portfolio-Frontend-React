@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   GrayTheme,
+  ModeIcon,
   NaviBlueTheme,
   StyledButtonTheme,
   StyledLogo,
@@ -9,18 +10,24 @@ import {
   StyledNavItems,
   StyledNavLink,
   StyledNavbarContainer,
+  StyledThemeItems,
   ThemeButton,
 } from "./NavbarStyle";
 import { route } from "@/app/utils/routes";
 import { AiOutlineMenu } from "react-icons/ai";
+import { FaCog } from "react-icons/fa";
 export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
   const [openMenuDrawer, setopenMenuDrawer] = useState(false);
-  let renderColorThemeButton = []
- for(let theme_name in theme){
-   if((theme_name !== currentTheme) && (renderColorThemeButton.includes(currentTheme) === false)){
-    renderColorThemeButton.push(theme_name);
-   }
- }
+  const [openDrawerForCustomTheme, setopenDrawerForCustomTheme] = useState(false);
+  let renderColorThemeButton = [];
+  for (let theme_name in theme) {
+    if (
+      theme_name !== currentTheme &&
+      renderColorThemeButton.includes(currentTheme) === false
+    ) {
+      renderColorThemeButton.push(theme_name);
+    }
+  }
   return (
     <StyledNavbarContainer>
       <StyledLogoContainer>
@@ -38,8 +45,24 @@ export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
             </StyledNavLink>
           );
         })}
-      {renderColorThemeButton.map((element, index) => <ThemeButton key ={element} themeBgColor = {theme[element].themeBgColor} onClick = {() => setcurrentTheme(element.toString())} />)}
-      </StyledNavItems>
+
+        <ModeIcon onClick={() => setopenDrawerForCustomTheme(!openDrawerForCustomTheme)}>
+          <FaCog />
+        </ModeIcon>
+        {
+          openDrawerForCustomTheme === true && (
+            <StyledThemeItems>
+            {renderColorThemeButton.map((element) => (
+              <ThemeButton
+                key={element}
+                themebgcolor={theme[element].themebgcolor}
+                onClick={() => setcurrentTheme(element.toString())}
+              />
+            ))}
+            </StyledThemeItems>
+          )
+        }
+      </StyledNavItems>      
     </StyledNavbarContainer>
   );
 };

@@ -58,7 +58,7 @@ export const themes = {
       borderColor: "rgb(53, 53, 53)",
     },
     boxShadow: "0rem 0rem 100rem 0rem rgb(0 0 0 / 73%)",
-    themeBgColor: "#0f172a",
+    themebgcolor: "#0f172a",
     cardBg : "#211531",
   },
   naviBlueCardBgNoneTheme: {
@@ -76,7 +76,7 @@ export const themes = {
       borderColor: "rgb(53, 53, 53)",
     },
     boxShadow: "0rem 0rem 100rem 0rem rgb(0 0 0 / 73%)",
-    themeBgColor: "#0f172a",
+    themebgcolor: "#0f172a",
     cardBg : "none",
   },
 
@@ -97,7 +97,7 @@ export const themes = {
     
     boxShadow: "0rem 0rem 100rem 0rem  #000000",
   
-    themeBgColor: "#020e2f",
+    themebgcolor: "#020e2f",
     cardBg: "#211531",
   },
   deepNavyBlueCardBgNoneTheme: {
@@ -116,7 +116,7 @@ export const themes = {
     },
     
     boxShadow: "0rem 0rem 100rem 0rem  #000000",
-    themeBgColor: "#020e2f",
+    themebgcolor: "#020e2f",
     cardBg: "none",
   },
   blueGreyTheme: {
@@ -134,7 +134,7 @@ export const themes = {
     },
    
     boxShadow: "0rem 0rem 100rem 0rem  #181b23",
-    themeBgColor: "#1C2536",
+    themebgcolor: "#1C2536",
     cardBg : "#211531"
   },
   lightTheme: {
@@ -153,7 +153,7 @@ export const themes = {
    
     boxShadow: "0rem 0rem 100rem 0rem  rgba(82, 63, 105, 0.05)",
    
-    themeBgColor: "#ECF1F5",
+    themebgcolor: "#ECF1F5",
     cardBg: "#211531",
   },
   blackTheme: {
@@ -172,7 +172,7 @@ export const themes = {
     
     boxShadow: "0rem 0rem 100rem 0rem rgba(82, 63, 105, 0.05)",
    
-    themeBgColor: "#100c10",
+    themebgcolor: "#100c10",
     cardBg : "#211531",
   },
 };
