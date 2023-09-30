@@ -14,10 +14,14 @@ export const StyledNavbarContainer = styled.div`
     margin: 0rem 2rem;
   }
 `;
-StyledNavbarContainer.displayName = 'StyledNavbarContainer'
+StyledNavbarContainer.displayName = 'StyledNavbarContainer';
+
+
 export const StyledLogoContainer = styled.div``;
 
 StyledLogoContainer.displayName = 'StyledLogoContainer';
+
+
 
 export const StyledLogo = styled(Link)`
   font-size: 2rem;
@@ -25,9 +29,13 @@ export const StyledLogo = styled(Link)`
 
 StyledLogo.displayName = 'StyledLogo';
 
+
+
 export const StyledWebsiteName = styled(Link)``;
 
 StyledWebsiteName.displayName = 'StyledWebsiteName';
+
+
 
 export const StyledNavItems = styled.div`
   display: flex;
@@ -44,7 +52,8 @@ export const StyledNavItems = styled.div`
     justify-content: flex-start;
     border-radius: 1rem;
     background: ${({theme})=> theme.bg.bgColor};
-    box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff;
+    /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
+    border : 1px solid ${({theme}) => theme.text.borderColor};
     position: absolute;
     flex: 1;
     right: 1.9rem;
@@ -57,9 +66,12 @@ export const StyledNavItems = styled.div`
 
 StyledNavItems.displayName ='StyledNavItems';
 
+
 export const StyledNavLink = styled(Link)``;
 
 StyledNavLink.displayName = 'StyledNavLink';
+
+
 
 export const StyledMenu = styled.button`
   display: none;
@@ -73,8 +85,15 @@ export const StyledMenu = styled.button`
 
 StyledMenu.displayName = 'StyledMenu';
 
+
+export const ModeIcon = styled.div`
+`;
+
+ModeIcon.displayName = "ModeIcon";
+
+
 export const ThemeButton = styled.button`
-background: ${(props) => props.themeBgColor};
+background: ${(props) => props.themebgcolor};
 border-radius: 30%;
 width: 2rem;
 height: 2rem;`
@@ -82,3 +101,36 @@ height: 2rem;`
 ThemeButton.displayName = 'ThemeButton';
 
 
+export const StyledThemeItems = styled.div`
+
+
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-family: "Poppins",sans-serif;
+    position: absolute;
+    top: 3rem;
+    border : 1px solid ${({theme}) => theme.text.borderColor};
+    padding: 1rem;
+    border-radius: 1rem;
+
+
+  @media only screen and (max-width: 600px) {
+   
+    /* display: ${(props) => props.display}; */
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    border-radius: 1rem;
+    background: ${({theme})=> theme.bg.bgColor};
+    border : 1px solid ${({theme}) => theme.text.borderColor};
+    position: relative;
+    flex: 1;
+    right: 1.1rem;
+    width: 11rem;
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+  }
+`;
