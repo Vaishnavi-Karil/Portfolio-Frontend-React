@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills currentTab={currentTab} setcurrentTab={setcurrentTab} />
-      <Tools currentTab={currentTab} setcurrentTab={setcurrentTab} />
+      {/* <Tools currentTab={currentTab} setcurrentTab={setcurrentTab} /> */}
       <Experience />
       <Projects />
       <Contact />
