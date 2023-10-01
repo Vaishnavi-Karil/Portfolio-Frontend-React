@@ -33,27 +33,25 @@ export const Skills = ({
         <StyledMoreInformation>Explore My</StyledMoreInformation>
         <StyledHeading1>Skills</StyledHeading1>
         <StyledTabs>
-          <StyledTabLink href="/#skills"   color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
-              background={currentTab === "Skills" ? "white" : "transparent"}>
-            <StyledTab
-              onClick={() => {
-                setcurrentTab("Skills");
-              }}
-            
-            >
-              Technical Skills
-            </StyledTab>
+          <StyledTabLink
+            href="/#skills"
+            color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
+            background={currentTab === "Skills" ? "white" : "transparent"}
+            onClick={() => {
+              setcurrentTab("Skills");
+            }}
+          >
+            <StyledTab>Technical Skills</StyledTab>
           </StyledTabLink>
-          <StyledTabLink href="/#tools"  color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
-              background={currentTab === "Tools" ? "white" : "transparent"}>
-            <StyledTab
-              onClick={() => {
-                setcurrentTab("Tools");
-              }}
-             
-            >
-              Development Tools
-            </StyledTab>
+          <StyledTabLink
+            href="/#tools"
+            color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
+            background={currentTab === "Tools" ? "white" : "transparent"}
+            onClick={() => {
+              setcurrentTab("Tools");
+            }}
+          >
+            <StyledTab>Development Tools</StyledTab>
           </StyledTabLink>
         </StyledTabs>
       </StyledCardHeadingContainer>
