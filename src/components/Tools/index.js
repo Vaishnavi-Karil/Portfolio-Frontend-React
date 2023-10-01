@@ -22,38 +22,36 @@ import {
 import checkmark from "../../../assets/checkmark.png";
 import { ArrayOfTools } from "@/app/data/constants";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 export const Tools = ({ currentTab, setcurrentTab }) => {
-  const router = useRouter();
   return (
     <StyledCardContainer id="tools">
       <StyledCardHeadingContainer>
         <StyledMoreInformation>Explore My</StyledMoreInformation>
         <StyledHeading1>Skills & Tools</StyledHeading1>
         <StyledTabs>
-          <StyledTab
-            id="skills_tab"
-            onClick={() => {
-              setcurrentTab("Skills");
-              console.log("router", router);
-              router.push("/#skills");
-            }}
-            color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
-            background={currentTab === "Skills" ? "white" : "transparent"}
-          >
-            Skills
-          </StyledTab>
-          <StyledTab
-            id="tools_tab"
-            onClick={() => {
-              setcurrentTab("Tools");
-              console.log("router", router);
-              router.push("/#tools");
-            }}
-            color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
-            background={currentTab === "Tools" ? "white" : "transparent"}
-          >
-            Tools
-          </StyledTab>
+          <Link href="/#skills">
+            <StyledTab
+              onClick={() => {
+                setcurrentTab("Skills");
+              }}
+              color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
+              background={currentTab === "Skills" ? "white" : "transparent"}
+            >
+              Skills
+            </StyledTab>
+          </Link>
+          <Link href="/#tools">
+            <StyledTab
+              onClick={() => {
+                setcurrentTab("Tools");
+              }}
+              color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
+              background={currentTab === "Tools" ? "white" : "transparent"}
+            >
+              Tools
+            </StyledTab>
+          </Link>
         </StyledTabs>
       </StyledCardHeadingContainer>
       <StyledCardDetails>

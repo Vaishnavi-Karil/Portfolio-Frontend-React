@@ -34,7 +34,11 @@ export default function RootLayout({ children }) {
         <body>
           <StyledComponentsRegistry theme={currentTheme}>
             <GlobalStyles theme={themes[currentTheme]} />
-            <Navbar theme = {themes}  currentTheme ={currentTheme} setcurrentTheme={setcurrentTheme} />
+            <Navbar
+              theme={themes}
+              currentTheme={currentTheme}
+              setcurrentTheme={setcurrentTheme}
+            />
             <Container>{children}</Container>
             <Footer />
           </StyledComponentsRegistry>

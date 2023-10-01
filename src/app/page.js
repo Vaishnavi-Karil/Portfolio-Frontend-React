@@ -6,7 +6,6 @@ import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Tools } from "@/components/Tools";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Home() {
@@ -15,8 +14,12 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <Skills currentTab={currentTab} setcurrentTab={setcurrentTab} />
-      {/* <Tools currentTab={currentTab} setcurrentTab={setcurrentTab} /> */}
+      {currentTab === "Skills" && (
+        <Skills currentTab={currentTab} setcurrentTab={setcurrentTab} />
+      )}
+      {currentTab === "Tools" && (
+        <Tools currentTab={currentTab} setcurrentTab={setcurrentTab} />
+      )}
       <Experience />
       <Projects />
       <Contact />

@@ -16,9 +16,11 @@ import {
 import { route } from "@/app/utils/routes";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaCog } from "react-icons/fa";
+
 export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
   const [openMenuDrawer, setopenMenuDrawer] = useState(false);
-  const [openDrawerForCustomTheme, setopenDrawerForCustomTheme] = useState(false);
+  const [openDrawerForCustomTheme, setopenDrawerForCustomTheme] =
+    useState(false);
   let renderColorThemeButton = [];
   for (let theme_name in theme) {
     if (
@@ -39,6 +41,7 @@ export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
       <StyledNavItems display={openMenuDrawer === true ? "flex" : "none"}>
         {route.map((pg, index) => {
           const { id, path, text } = pg;
+
           return (
             <StyledNavLink key={id} href={path}>
               {text}
@@ -46,12 +49,13 @@ export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
           );
         })}
 
-        <ModeIcon onClick={() => setopenDrawerForCustomTheme(!openDrawerForCustomTheme)}>
+        <ModeIcon
+          onClick={() => setopenDrawerForCustomTheme(!openDrawerForCustomTheme)}
+        >
           <FaCog />
         </ModeIcon>
-        {
-          openDrawerForCustomTheme === true && (
-            <StyledThemeItems>
+        {openDrawerForCustomTheme === true && (
+          <StyledThemeItems>
             {renderColorThemeButton.map((element) => (
               <ThemeButton
                 key={element}
@@ -59,10 +63,9 @@ export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
                 onClick={() => setcurrentTheme(element.toString())}
               />
             ))}
-            </StyledThemeItems>
-          )
-        }
-      </StyledNavItems>      
+          </StyledThemeItems>
+        )}
+      </StyledNavItems>
     </StyledNavbarContainer>
   );
 };
