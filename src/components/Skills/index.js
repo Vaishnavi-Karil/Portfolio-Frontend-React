@@ -30,7 +30,7 @@ export const Skills = ({
     <StyledCardContainer id="skills">
       <StyledCardHeadingContainer>
         <StyledMoreInformation>Explore My</StyledMoreInformation>
-        <StyledHeading1>Skills & Tools</StyledHeading1>
+        <StyledHeading1>Skills</StyledHeading1>
         <StyledTabs>
           <Link href="/#skills">
             <StyledTab
@@ -40,7 +40,7 @@ export const Skills = ({
               color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
               background={currentTab === "Skills" ? "white" : "transparent"}
             >
-              Skills
+              Technical Skills
             </StyledTab>
           </Link>
           <Link href="/#tools">
@@ -51,7 +51,7 @@ export const Skills = ({
               color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
               background={currentTab === "Tools" ? "white" : "transparent"}
             >
-              Tools
+              Development Tools
             </StyledTab>
           </Link>
         </StyledTabs>
