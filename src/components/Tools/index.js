@@ -38,7 +38,7 @@ export const Tools = ({ currentTab, setcurrentTab }) => {
               color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
               background={currentTab === "Skills" ? "white" : "transparent"}
             >
-              Technical Skills Proficienc
+              Technical Skills
             </StyledTab>
           </Link>
           <Link href="/#tools">
@@ -49,7 +49,7 @@ export const Tools = ({ currentTab, setcurrentTab }) => {
               color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
               background={currentTab === "Tools" ? "white" : "transparent"}
             >
-              Development Tools Proficiency
+              Development Tools
             </StyledTab>
           </Link>
         </StyledTabs>
