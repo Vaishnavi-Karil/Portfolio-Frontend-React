@@ -10,19 +10,22 @@ import {
 import {
   StyledCardDetails,
   StyledCardDetailsContainer,
+  StyledRenderSkillContainer,
   StyledRenderToolContainer,
+  StyledSkillCardHeader,
+  StyledSkillElement,
   StyledTab,
   StyledTabs,
   StyledToolBarHeader,
   StyledToolElement,
-} from "./SkillsStyle";
+} from "./ToolsStyle";
 import checkmark from "../../../assets/checkmark.png";
-import { ArrayOfSkills } from "@/app/data/constants";
+import { ArrayOfTools } from "@/app/data/constants";
 import { useRouter } from "next/navigation";
-export const Skills = ({ currentTab, setcurrentTab }) => {
+export const Tools = ({ currentTab, setcurrentTab }) => {
   const router = useRouter();
   return (
-    <StyledCardContainer id="skills">
+    <StyledCardContainer id="tools">
       <StyledCardHeadingContainer>
         <StyledMoreInformation>Explore My</StyledMoreInformation>
         <StyledHeading1>Skills & Tools</StyledHeading1>
@@ -54,19 +57,19 @@ export const Skills = ({ currentTab, setcurrentTab }) => {
         </StyledTabs>
       </StyledCardHeadingContainer>
       <StyledCardDetails>
-        {ArrayOfSkills.map((element, index) => {
-          const { title, skills } = element;
+        {ArrayOfTools.map((element, index) => {
+          const { title, tools } = element;
           return (
-            <StyledCardDetailsContainer key={"skills" + index}>
+            <StyledCardDetailsContainer key={"tools" + index}>
               <StyledToolBarHeader>{title}</StyledToolBarHeader>
               <StyledRenderToolContainer>
-                {skills.map((Skill) => {
-                  const { skillname, proficiency } = Skill;
+                {tools.map((Tool) => {
+                  const { toolname, proficiency } = Tool;
                   return (
-                    <StyledToolElement key={Skill}>
+                    <StyledToolElement key={Tool}>
                       <StyledIcon src={checkmark} alt="checkmark" />
                       <div>
-                        <p>{skillname}</p>
+                        <p>{toolname}</p>
                         <StyledParaTypography>
                           {proficiency}
                         </StyledParaTypography>

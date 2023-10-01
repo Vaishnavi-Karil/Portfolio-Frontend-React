@@ -9,11 +9,6 @@ export const route = [
     path: "/#about",
     text: "About",
   },
-  // {
-  //   id: "skills&tools",
-  //   path: "/#skills&tools",
-  //   text: "Skills & Tools",
-  // },
   {
     id: "skills",
     path: "/#skills",

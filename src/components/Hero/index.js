@@ -18,7 +18,7 @@ import {
 export const Hero = () => {
   const { profile_pic } = Img;
   return (
-    <StyledHeroContainer>
+    <StyledHeroContainer id="/">
       <StyledImageContainer>
         <StyledProfileImage src={profile_pic} alt={profile_pic} />
       </StyledImageContainer>
