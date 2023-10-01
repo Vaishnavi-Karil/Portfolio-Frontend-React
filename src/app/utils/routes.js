@@ -7,31 +7,36 @@ export const route = [
   {
     id: "about",
     path: "/#about",
-    text: 'About',
+    text: "About",
   },
+  // {
+  //   id: "skills&tools",
+  //   path: "/#skills&tools",
+  //   text: "Skills & Tools",
+  // },
   {
     id: "skills",
     path: "/#skills",
-    text: 'Skills',
+    text: "Skills",
   },
   {
     id: "tools",
     path: "/#tools",
-    text: 'Tools',
+    text: "Tools",
   },
   {
     id: "experience",
     path: "/#experience",
-    text : 'Experience',
+    text: "Experience",
   },
   {
-    id : "projects", 
-    path : '/#projects', 
-    text : 'Projects',
+    id: "projects",
+    path: "/#projects",
+    text: "Projects",
   },
   {
     id: "contact",
     path: "/#contact",
-    text: 'Contact', 
+    text: "Contact",
   },
 ];
