@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Link from "next/link";
 export const StyledCardDetails = styled.div`
   width: 100%;
   height: 100%;
@@ -89,16 +89,6 @@ StyledToolElement.displayName = "StyledToolElement";
 // Tabs
 
 export const StyledTabs = styled.div`
-  /* display: flex;
-  gap: 1rem;
-  border: 1px solid white;
-  border-radius: 45px;
-  font-size: 1rem;
-  background: transparent;
-  justify-content: center;
-  margin-top: 1rem;
-  background: rgb(53, 53, 53); */
-
   display: flex;
   gap: 1rem;
   border: 1px solid white;
@@ -107,10 +97,10 @@ export const StyledTabs = styled.div`
   background: transparent;
   justify-content: center;
   margin-top: 1rem;
-  background: rgb(53, 53, 53);
+  background: ${({ theme }) => theme.bg.bgColor};
   height: 2.5rem;
 `;
-export const StyledTab = styled.p`
+export const StyledTabLink = styled(Link)`
   padding: 0.6rem;
   border: 1px solid transparent;
   border-radius: 1.4rem;
@@ -120,5 +110,18 @@ export const StyledTab = styled.p`
   width: 10rem;
   background: ${(props) => props.background};
   color: ${(props) => props.color};
+`;
+StyledTabLink.displayName = "StyledTabLink";
+
+export const StyledTab = styled.p`
+  /* padding: 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 1.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  width: 10rem;
+  background: ${(props) => props.background};
+  color: ${(props) => props.color}; */
 `;
 StyledTab.displayName = "StyledTab";

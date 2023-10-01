@@ -15,6 +15,7 @@ import {
   StyledSkillCardHeader,
   StyledSkillElement,
   StyledTab,
+  StyledTabLink,
   StyledTabs,
   StyledToolBarHeader,
   StyledToolElement,
@@ -30,28 +31,32 @@ export const Tools = ({ currentTab, setcurrentTab }) => {
         <StyledMoreInformation>Explore My</StyledMoreInformation>
         <StyledHeading1>Skills</StyledHeading1>
         <StyledTabs>
-          <Link href="/#skills">
+          <StyledTabLink
+            href="/#skills"
+            color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
+            background={currentTab === "Skills" ? "white" : "transparent"}
+          >
             <StyledTab
               onClick={() => {
                 setcurrentTab("Skills");
               }}
-              color={currentTab === "Skills" ? "rgb(53, 53, 53)" : "white"}
-              background={currentTab === "Skills" ? "white" : "transparent"}
             >
               Technical Skills
             </StyledTab>
-          </Link>
-          <Link href="/#tools">
+          </StyledTabLink>
+          <StyledTabLink
+            href="/#tools"
+            color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
+            background={currentTab === "Tools" ? "white" : "transparent"}
+          >
             <StyledTab
               onClick={() => {
                 setcurrentTab("Tools");
               }}
-              color={currentTab === "Tools" ? "rgb(53, 53, 53)" : "white"}
-              background={currentTab === "Tools" ? "white" : "transparent"}
             >
               Development Tools
             </StyledTab>
-          </Link>
+          </StyledTabLink>
         </StyledTabs>
       </StyledCardHeadingContainer>
       <StyledCardDetails>

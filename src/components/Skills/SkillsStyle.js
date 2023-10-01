@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export const StyledCardDetails = styled.div`
@@ -107,10 +108,11 @@ export const StyledTabs = styled.div`
   background: transparent;
   justify-content: center;
   margin-top: 1rem;
-  background: rgb(53, 53, 53);
+  background: ${({ theme }) => theme.bg.bgColor};
   height: 2.5rem;
 `;
-export const StyledTab = styled.p`
+
+export const StyledTabLink = styled(Link)`
   padding: 0.6rem;
   border: 1px solid transparent;
   border-radius: 1.4rem;
@@ -120,5 +122,18 @@ export const StyledTab = styled.p`
   width: 10rem;
   background: ${(props) => props.background};
   color: ${(props) => props.color};
+`;
+StyledTabLink.displayName = "StyledTabLink";
+
+export const StyledTab = styled.p`
+  /* padding: 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 1.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  width: 10rem;
+  background: ${(props) => props.background};
+  color: ${(props) => props.color}; */
 `;
 StyledTab.displayName = "StyledTab";
