@@ -146,3 +146,71 @@ export const ArrayOfTools = [
     ],
   },
 ];
+
+
+export const ArrayofExperiences = [
+  {
+    companyname : "Cyber Information Technology Corporation", 
+    designation : "Full Stack Developer", 
+    startdate : "February 2021", 
+    enddate : "15 days notice period", 
+    experience : Date.now().toString(), 
+    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    plateform : "Web Application", 
+    projectname : ["DevShopify"],
+    workingOnTotalProjects : 1,
+    technologies : {
+      frontendtechnologies: ["React"], 
+      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
+      tools: ["Git", "Jira", "Elastic Beanstalk", "CI/CD", "AWS Amplify", "aws", "Vercel", "MongoDBCompass", "MongoDB", "MongoDBShell"],
+    }
+  }, 
+  {
+    companyname : "PHIXMAN", 
+    designation : "React Frontend Developer", 
+    startdate : "March 2022", 
+    enddate : "January 2023", 
+    experience : "total experience",
+    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    plateform : "Web Application", 
+    projectname : ["Phixman Admin Dashboard"],
+    workingOnTotalProjects : 1,
+    technologies : {
+      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
+      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
+      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    },
+  }, 
+  {
+    companyname : "INFOBYD SOFTWARE SOLUTIONS", 
+    designation : "React Frontend Developer", 
+    startdate : "May 2021", 
+    enddate : "Mar 2022", 
+    experience : "total experience",
+    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    plateform : "Web Application", 
+    projectname : ["Stakeholder React App", "Socket Connection with Genesys Cloud"],
+    workingOnTotalProjects : 2,
+    technologies : {
+      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
+      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
+      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    },
+  }, 
+  {
+    companyname : "ASPARROW TECH", 
+    designation : "SOFTWARE TRAINEE", 
+    startdate : "Dec 2020", 
+    enddate : "April 2020", 
+    experience : "total experience",
+    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    plateform : "Web Application", 
+    projectname : ["React Intenship"],
+    workingOnTotalProjects : 0,
+    technologies : {
+      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
+      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
+      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    },
+  }, 
+]
