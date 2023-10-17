@@ -12,6 +12,9 @@ StyledExperience.displayName = "StyledExperience";
 
 export const StyledRoleAndDurationOfWork = styled.div`
   font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 StyledRoleAndDurationOfWork.displayName = "StyledRoleAndDurationOfWork";
@@ -24,3 +27,27 @@ export const StyledCompanyName = styled.p`
 `;
 
 StyledCompanyName.displayName = "StyledCompanyName";
+
+export const StyledDescription = styled.div`
+  color: rgb(85, 85, 85);
+  font-size: 1.2rem;
+`;
+
+StyledDescription.displayName = "StyledDescription";
+
+
+export const StyledTotalExperience = styled.p`
+color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 3rem;`; 
+
+StyledTotalExperience.displayName = "StyledTotalExperience";
+
+
+export const StyledExperienceHeadingContainer = styled.div`
+display : flex; 
+flex-direction : row;
+justify-content: space-between;`; 
+
+StyledExperienceHeadingContainer.displayName = "StyledExperienceHeadingContainer";

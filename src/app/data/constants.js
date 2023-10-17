@@ -152,10 +152,13 @@ export const ArrayofExperiences = [
   {
     companyname : "Cyber Information Technology Corporation", 
     designation : "Full Stack Developer", 
-    startdate : "February 2021", 
-    enddate : "15 days notice period", 
-    experience : Date.now(), 
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    startdate : "Feb 2021", 
+    enddate : "Present", 
+    experience : 'total experience', 
+    responsibility : 'Responsible for the development of the website and the backend of the application.', 
+    description : (designation, companyname,responsibility) => {
+      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
+    },
     plateform : "Web Application", 
     projectname : ["DevShopify"],
     workingOnTotalProjects : 1,
@@ -168,10 +171,13 @@ export const ArrayofExperiences = [
   {
     companyname : "Phixman", 
     designation : "React Frontend Developer", 
-    startdate : "March 2022", 
-    enddate : "January 2023", 
+    startdate : "Mar 2022", 
+    enddate : "Jan 2023", 
     experience : "total experience",
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    responsibility : 'Responsible for the development of the website and the backend of the application.', 
+    description : (designation, companyname, responsibility) => {
+      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
+    },
     plateform : "Web Application", 
     projectname : ["Phixman Admin Dashboard"],
     workingOnTotalProjects : 1,
@@ -187,7 +193,10 @@ export const ArrayofExperiences = [
     startdate : "May 2021", 
     enddate : "Mar 2022", 
     experience : "total experience",
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    responsibility : 'Responsible for the development of the website and the backend of the application.', 
+    description : (designation, companyname, responsibility) => {
+      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
+    },
     plateform : "Web Application", 
     projectname : ["Stakeholder React App", "Socket Connection with Genesys Cloud"],
     workingOnTotalProjects : 2,
@@ -203,7 +212,10 @@ export const ArrayofExperiences = [
     startdate : "Dec 2020", 
     enddate : "April 2020", 
     experience : "total experience",
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
+    responsibility : 'Responsible for the development of the website and the backend of the application.', 
+    description : (designation, companyname, responsibility) => {
+      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
+    },
     plateform : "Web Application", 
     projectname : ["React Intenship"],
     workingOnTotalProjects : 0,
