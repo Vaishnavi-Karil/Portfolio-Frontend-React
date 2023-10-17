@@ -154,7 +154,7 @@ export const ArrayofExperiences = [
     designation : "Full Stack Developer", 
     startdate : "February 2021", 
     enddate : "15 days notice period", 
-    experience : Date.now().toString(), 
+    experience : Date.now(), 
     description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
     plateform : "Web Application", 
     projectname : ["DevShopify"],
@@ -166,7 +166,7 @@ export const ArrayofExperiences = [
     }
   }, 
   {
-    companyname : "PHIXMAN", 
+    companyname : "Phixman", 
     designation : "React Frontend Developer", 
     startdate : "March 2022", 
     enddate : "January 2023", 
@@ -182,7 +182,7 @@ export const ArrayofExperiences = [
     },
   }, 
   {
-    companyname : "INFOBYD SOFTWARE SOLUTIONS", 
+    companyname : "Infobyd  Software Solutions", 
     designation : "React Frontend Developer", 
     startdate : "May 2021", 
     enddate : "Mar 2022", 
@@ -198,8 +198,8 @@ export const ArrayofExperiences = [
     },
   }, 
   {
-    companyname : "ASPARROW TECH", 
-    designation : "SOFTWARE TRAINEE", 
+    companyname : "Asparrow Tech", 
+    designation : "Software Trainee", 
     startdate : "Dec 2020", 
     enddate : "April 2020", 
     experience : "total experience",

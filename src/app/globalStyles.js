@@ -29,5 +29,10 @@ svg {
     height: 2rem;
 }
 
+
+li {
+  list-style: none;
+  text-align: start;
+}
   /* Additional global styles can be added here */
 `;
