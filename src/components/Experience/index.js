@@ -2,10 +2,18 @@ import {
   StyledCardContainer,
   StyledCardHeadingContainer,
   StyledHeading1,
+  StyledHeading3,
+  StyledHeading6,
   StyledMoreInformation,
 } from "@/styles/Styles";
 import { ArrayofExperiences } from "@/app/data/constants";
-import { StyledExperience } from "./ExperienceStyle";
+import {
+  CompanyName,
+  StyledCompanyName,
+  StyledExperience,
+  StyledHeaderTypography,
+  StyledRoleAndDurationOfWork,
+} from "./ExperienceStyle";
 
 export const Experience = () => {
   const experience = ArrayofExperiences.map((experience_details, index) => {
@@ -23,35 +31,25 @@ export const Experience = () => {
     } = experience_details;
     return (
       <StyledExperience key={index}>
-        <div>
-          <p>{companyname}</p>
-          <p>{designation}</p>
-          <p>{startdate}</p>
-          <p>{enddate}</p>
-          <p>{experience}</p>
-          <p>{description}</p>
-          <p>{plateform}</p>
-          <p>{projectname}</p>
-          <p>{workingOnTotalProjects}</p>
-        </div>
-        <div>
-          <div>
-            <p>{frontendtechnologies}</p>
-            <p> {backendtechnologies}</p>
-            <p>{tools}</p>
-          </div>
+        <div style={{ lineHeight: "1.6rem" }}>
+          <StyledCompanyName>{companyname}</StyledCompanyName>
+          <StyledRoleAndDurationOfWork>
+            <p>{designation}</p>
+            <p>
+              {startdate} - {enddate}
+            </p>
+          </StyledRoleAndDurationOfWork>
         </div>
       </StyledExperience>
     );
   });
   return (
     <>
-      <StyledCardContainer id="experience">
+      <StyledCardContainer id="experience" styling={{ alignItem: "left" }}>
         <StyledCardHeadingContainer>
           <StyledMoreInformation>Explore My</StyledMoreInformation>
           <StyledHeading1>Experience</StyledHeading1>
         </StyledCardHeadingContainer>
-
         {experience}
       </StyledCardContainer>
     </>
