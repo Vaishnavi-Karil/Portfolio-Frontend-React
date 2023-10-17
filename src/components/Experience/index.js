@@ -1,6 +1,3 @@
-"use client";
-import React, { useState, useEffect } from "react";
-
 import {
   StyledCardContainer,
   StyledCardHeadingContainer,
@@ -9,14 +6,8 @@ import {
 } from "@/styles/Styles";
 import { ArrayofExperiences } from "@/app/data/constants";
 import { StyledExperience } from "./ExperienceStyle";
-import Loader from "@/app/loader";
 
 export const Experience = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
   const experience = ArrayofExperiences.map((experience_details, index) => {
     const {
       companyname,
@@ -32,23 +23,23 @@ export const Experience = () => {
     } = experience_details;
     return (
       <StyledExperience key={index}>
-        <ul>
-          <li> {companyname}</li>
-          <li> {designation}</li>
-          <li>{startdate}</li>
-          <li>{enddate}</li>
-          <li>{experience}</li>
-          <li> {description}</li>
-          <li> {plateform}</li>
-          <li> {projectname}</li>
-          <li>{workingOnTotalProjects}</li>
-        </ul>
         <div>
-          <ul>
-            <li>{frontendtechnologies}</li>
-            <li> {backendtechnologies}</li>
-            <li>{tools}</li>
-          </ul>
+          <p>{companyname}</p>
+          <p>{designation}</p>
+          <p>{startdate}</p>
+          <p>{enddate}</p>
+          <p>{experience}</p>
+          <p>{description}</p>
+          <p>{plateform}</p>
+          <p>{projectname}</p>
+          <p>{workingOnTotalProjects}</p>
+        </div>
+        <div>
+          <div>
+            <p>{frontendtechnologies}</p>
+            <p> {backendtechnologies}</p>
+            <p>{tools}</p>
+          </div>
         </div>
       </StyledExperience>
     );
@@ -61,7 +52,7 @@ export const Experience = () => {
           <StyledHeading1>Experience</StyledHeading1>
         </StyledCardHeadingContainer>
 
-        {isClient ? <Loader/> : experience}
+        {experience}
       </StyledCardContainer>
     </>
   );
