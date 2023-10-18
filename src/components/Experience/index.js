@@ -27,18 +27,16 @@ export const Experience = () => {
       enddate,
       experience,
       description,
-      plateform,
       projectname,
-      workingOnTotalProjects,
       responsibility,
-      technologies: { frontendtechnologies, backendtechnologies, tools },
+      // technologies: { frontendtechnologies, backendtechnologies, tools },
     } = experience_details;
     return (
       <StyledExperience key={index}>
         <div style={{ lineHeight: "1.6rem" }}>
           <StyledExperienceHeadingContainer>
-          <StyledCompanyName>{companyname}</StyledCompanyName>
-          <StyledTotalExperience>8 months</StyledTotalExperience>
+            <StyledCompanyName>{companyname}</StyledCompanyName>
+            <StyledTotalExperience>{experience}</StyledTotalExperience>
           </StyledExperienceHeadingContainer>
           <StyledRoleAndDurationOfWork>
             <p>{designation}</p>
@@ -48,7 +46,8 @@ export const Experience = () => {
           </StyledRoleAndDurationOfWork>
 
           <StyledDescription>
-            {description(designation, companyname, responsibility)}
+            {/* {description(designation, companyname, projectname)} */}
+            I'm a React.js developer is a specialized software engineer proficient in designing and implementing dynamic user interfaces for web applications using React.js, a popular JavaScript library. They combine engineering principles with expertise in frontend technologies to create interactive and responsive user experiences.
           </StyledDescription>
         </div>
       </StyledExperience>

@@ -34,5 +34,9 @@ li {
   list-style: none;
   text-align: start;
 }
+
+p {
+  font-size: 1.1rem;
+}
   /* Additional global styles can be added here */
 `;

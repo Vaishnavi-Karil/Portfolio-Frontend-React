@@ -22,19 +22,18 @@ StyledRoleAndDurationOfWork.displayName = "StyledRoleAndDurationOfWork";
 export const StyledCompanyName = styled.p`
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   line-height: 3rem;
 `;
 
 StyledCompanyName.displayName = "StyledCompanyName";
 
 export const StyledDescription = styled.div`
+  padding: 0.8rem 0rem;
   color: rgb(85, 85, 85);
   font-size: 1.2rem;
 `;
-
 StyledDescription.displayName = "StyledDescription";
-
 
 export const StyledTotalExperience = styled.p`
 color: rgb(85, 85, 85);

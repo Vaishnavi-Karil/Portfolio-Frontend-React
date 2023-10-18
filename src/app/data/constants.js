@@ -2,7 +2,7 @@ export const ArrayOfSkills = [
   {
     title: "Frontend Skills",
     skills: [
-      { 
+      {
         skillname: "Next.js",
         proficiency: "Experienced",
       },
@@ -91,7 +91,7 @@ export const ArrayOfTools = [
       },
       {
         toolname: "Elastic Beanstalk (Host)",
-        proficiency:  "Experienced",
+        proficiency: "Experienced",
       },
       {
         toolname: "CI/CD",
@@ -99,7 +99,7 @@ export const ArrayOfTools = [
       },
       {
         toolname: "AWS Amplify (Host)",
-        proficiency:  "Experienced",
+        proficiency: "Experienced",
       },
 
       {
@@ -108,7 +108,7 @@ export const ArrayOfTools = [
       },
       {
         toolname: "Vercel",
-        proficiency:  "Experienced",
+        proficiency: "Experienced",
       },
     ],
   },
@@ -147,82 +147,17 @@ export const ArrayOfTools = [
   },
 ];
 
-
 export const ArrayofExperiences = [
   {
-    companyname : "Cyber Information Technology Corporation", 
-    designation : "Full Stack Developer", 
-    startdate : "Feb 2021", 
-    enddate : "Present", 
-    experience : 'total experience', 
-    responsibility : 'Responsible for the development of the website and the backend of the application.', 
-    description : (designation, companyname,responsibility) => {
-      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
+    companyname: "Phixman",
+    designation: "React Js Developer", 
+    startdate: "Mar 2022",
+    enddate: "Jan 2023",
+    experience: "total experience",
+    responsibility: [],
+    projectname: "Admin Dashboard Panel",
+    description: (designation, companyname, projectname) => {
+      return `I worked as an ${designation} to handle complete frontend of ${projectname}  of  ${companyname}.`;
     },
-    plateform : "Web Application", 
-    projectname : ["DevShopify"],
-    workingOnTotalProjects : 1,
-    technologies : {
-      frontendtechnologies: ["React"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["Git", "Jira", "Elastic Beanstalk", "CI/CD", "AWS Amplify", "aws", "Vercel", "MongoDBCompass", "MongoDB", "MongoDBShell"],
-    }
-  }, 
-  {
-    companyname : "Phixman", 
-    designation : "React Frontend Developer", 
-    startdate : "Mar 2022", 
-    enddate : "Jan 2023", 
-    experience : "total experience",
-    responsibility : 'Responsible for the development of the website and the backend of the application.', 
-    description : (designation, companyname, responsibility) => {
-      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
-    },
-    plateform : "Web Application", 
-    projectname : ["Phixman Admin Dashboard"],
-    workingOnTotalProjects : 1,
-    technologies : {
-      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
-    },
-  }, 
-  {
-    companyname : "Infobyd  Software Solutions", 
-    designation : "React Frontend Developer", 
-    startdate : "May 2021", 
-    enddate : "Mar 2022", 
-    experience : "total experience",
-    responsibility : 'Responsible for the development of the website and the backend of the application.', 
-    description : (designation, companyname, responsibility) => {
-      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
-    },
-    plateform : "Web Application", 
-    projectname : ["Stakeholder React App", "Socket Connection with Genesys Cloud"],
-    workingOnTotalProjects : 2,
-    technologies : {
-      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
-    },
-  }, 
-  {
-    companyname : "Asparrow Tech", 
-    designation : "Software Trainee", 
-    startdate : "Dec 2020", 
-    enddate : "April 2020", 
-    experience : "total experience",
-    responsibility : 'Responsible for the development of the website and the backend of the application.', 
-    description : (designation, companyname, responsibility) => {
-      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
-    },
-    plateform : "Web Application", 
-    projectname : ["React Intenship"],
-    workingOnTotalProjects : 0,
-    technologies : {
-      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
-    },
-  }, 
-]
+  },
+];
