@@ -26,12 +26,36 @@ export const Experience = () => {
       startdate,
       enddate,
       experience,
-      description,
-      projectname,
-      responsibility,
-      plateform
+      projectdetails: { workingOnTotalProjects, projects },
       // technologies: { frontendtechnologies, backendtechnologies, tools },
     } = experience_details;
+
+    const projectdetailsare = projects.map((project, index) => {
+      const {
+        plateform,
+        projectname,
+        workingTimeDuration,
+        responsibility,
+        description,
+        technologies: { frontendtechnologies, backendtechnologies, tools },
+      } = project;
+      return (
+        <>
+          <StyledExperienceHeadingContainer key={index}>
+            <StyledCompanyName
+              styling={{ fontSize: "1rem", borderBottom: "2px solid" }}
+            >
+              {projectname}
+            </StyledCompanyName>
+            <StyledTotalExperience>{plateform}</StyledTotalExperience>
+          </StyledExperienceHeadingContainer>
+          <StyledDescription key={index}>
+            {description(designation, companyname, projectname)}
+          </StyledDescription>
+        </>
+      );
+    });
+
     return (
       <StyledExperience key={index}>
         <div style={{ lineHeight: "1.6rem" }}>
@@ -39,28 +63,14 @@ export const Experience = () => {
             <StyledCompanyName>{companyname}</StyledCompanyName>
             <StyledTotalExperience>{experience}</StyledTotalExperience>
           </StyledExperienceHeadingContainer>
-       
+
           <StyledRoleAndDurationOfWork>
             <p>{designation}</p>
             <p>
               {startdate} - {enddate}
             </p>
           </StyledRoleAndDurationOfWork>
-          <StyledExperienceHeadingContainer>
-            <StyledCompanyName styling = {{fontSize: "1rem", borderBottom : '2px solid'}}>{projectname}</StyledCompanyName>
-            <StyledTotalExperience>{plateform}</StyledTotalExperience>
-          </StyledExperienceHeadingContainer>
-          <StyledDescription>
-            {description(designation, companyname, projectname)}         
-            {/* I'm working as an React Js Developer for Cyber Information
-            Technology Corportion and my responsibility to handle and manage
-            complete frontend development using Next.js React Framework. */}
-
-
-{/* 
-            I'm working as an React Js Developer at Phixman and my responsibility to handle and manage complete frontend development using React.js Frontend JavaScript Library. */}
-
-          </StyledDescription>
+          {projectdetailsare}
         </div>
       </StyledExperience>
     );

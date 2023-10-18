@@ -20,7 +20,9 @@ export const StyledRoleAndDurationOfWork = styled.div`
 StyledRoleAndDurationOfWork.displayName = "StyledRoleAndDurationOfWork";
 
 export const StyledCompanyName = styled.p`
-  color: rgb(85, 85, 85);
+  /* color: rgb(85, 85, 85); */
+  /* color: ${(theme) => theme?.text?.textColor}; */
+  color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: ${(props) => props?.styling?.fontSize || "1.9rem"};
   line-height: 3rem;
@@ -29,15 +31,17 @@ export const StyledCompanyName = styled.p`
 
 StyledCompanyName.displayName = "StyledCompanyName";
 
+
 export const StyledDescription = styled.div`
   padding: 0.8rem 0rem;
-  color: rgb(85, 85, 85);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `;
 StyledDescription.displayName = "StyledDescription";
 
 export const StyledTotalExperience = styled.p`
-color: rgb(85, 85, 85);
+/* color: rgb(85, 85, 85); */
+/* color: ${(theme) => theme?.text?.textColor}; */
+color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: 1rem;
   line-height: 3rem;`; 
