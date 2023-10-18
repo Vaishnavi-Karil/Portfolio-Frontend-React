@@ -46,8 +46,10 @@ export const Experience = () => {
           </StyledRoleAndDurationOfWork>
 
           <StyledDescription>
-            {/* {description(designation, companyname, projectname)} */}
-            I'm a React.js developer is a specialized software engineer proficient in designing and implementing dynamic user interfaces for web applications using React.js, a popular JavaScript library. They combine engineering principles with expertise in frontend technologies to create interactive and responsive user experiences.
+            {/* {description(designation, companyname, projectname)}          */}
+
+     I'm working for Cyber Information Technology Corportion as an React Js Developer to handle complete frontend of website using Next.js React Framwork. Next.js framework help to develop fullstack web application development.
+
           </StyledDescription>
         </div>
       </StyledExperience>
