@@ -29,6 +29,7 @@ export const Experience = () => {
       description,
       projectname,
       responsibility,
+      plateform
       // technologies: { frontendtechnologies, backendtechnologies, tools },
     } = experience_details;
     return (
@@ -38,17 +39,26 @@ export const Experience = () => {
             <StyledCompanyName>{companyname}</StyledCompanyName>
             <StyledTotalExperience>{experience}</StyledTotalExperience>
           </StyledExperienceHeadingContainer>
+       
           <StyledRoleAndDurationOfWork>
             <p>{designation}</p>
             <p>
               {startdate} - {enddate}
             </p>
           </StyledRoleAndDurationOfWork>
-
+          <StyledExperienceHeadingContainer>
+            <StyledCompanyName styling = {{fontSize: "1rem", borderBottom : '2px solid'}}>{projectname}</StyledCompanyName>
+            <StyledTotalExperience>{plateform}</StyledTotalExperience>
+          </StyledExperienceHeadingContainer>
           <StyledDescription>
-            {/* {description(designation, companyname, projectname)}          */}
+            {description(designation, companyname, projectname)}         
+            {/* I'm working as an React Js Developer for Cyber Information
+            Technology Corportion and my responsibility to handle and manage
+            complete frontend development using Next.js React Framework. */}
 
-     I'm working for Cyber Information Technology Corportion as an React Js Developer to handle complete frontend of website using Next.js React Framwork. Next.js framework help to develop fullstack web application development.
+
+{/* 
+            I'm working as an React Js Developer at Phixman and my responsibility to handle and manage complete frontend development using React.js Frontend JavaScript Library. */}
 
           </StyledDescription>
         </div>

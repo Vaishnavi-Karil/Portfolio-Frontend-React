@@ -119,22 +119,18 @@ export const ArrayOfTools = [
         toolname: "React DevTools",
         proficiency: "Experienced",
       },
-
       {
         toolname: "Redux DevTools",
         proficiency: "Experienced",
       },
-
       {
         toolname: "Google Chrome",
         proficiency: "Experienced",
       },
-
       {
         toolname: "Postman",
         proficiency: "Experienced",
       },
-
       {
         toolname: "MongoDB Compass",
         proficiency: "Experienced",
@@ -149,6 +145,25 @@ export const ArrayOfTools = [
 
 export const ArrayofExperiences = [
   {
+    companyname : "Cyber Information Technology Corporation", 
+    designation : "React Js Frontend Developer", 
+    startdate : "Feb 2021", 
+    enddate : "Present", 
+    experience : 'total experience', 
+    responsibility : [], 
+    description : (designation, companyname, projectname) => {
+      return `I'm working as an ${designation} for ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using Next.js React Framework.I'm mention my responsibility to be handling at ${companyname}.`
+    },
+    plateform : "Web Application", 
+    projectname : ["DevShopify"],
+    workingOnTotalProjects : 1,
+    technologies : {
+      frontendtechnologies: ["React"], 
+      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
+      tools: ["Git", "Jira", "Elastic Beanstalk", "CI/CD", "AWS Amplify", "aws", "Vercel", "MongoDBCompass", "MongoDB", "MongoDBShell"],
+    }
+  }, 
+  {
     companyname: "Phixman",
     designation: "React Js Developer", 
     startdate: "Mar 2022",
@@ -157,7 +172,28 @@ export const ArrayofExperiences = [
     responsibility: [],
     projectname: "Admin Dashboard Panel",
     description: (designation, companyname, projectname) => {
-      return `I worked as an ${designation} to handle complete frontend of ${projectname}  of  ${companyname}.`;
+      return `I'm working as an ${designation} at ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using React.js Frontend JavaScript Library for building user interfaces based on components and I'm mention my responsibility to be handled at ${companyname}.`;
     },
+    plateform: 'Web Application'
   },
+  
+  {
+    companyname : "Infobyd  Software Solutions", 
+    designation : "React Frontend Developer", 
+    startdate : "May 2021", 
+    enddate : "Mar 2022", 
+    experience : "total experience",
+    responsibility : [], 
+    description : (designation, companyname, responsibility) => {
+      return `I worked as a ${designation} at ${companyname}. ${responsibility}`
+    },
+    plateform : "Web Application", 
+    projectname : ["Stakeholder React App", "Socket Connection with Genesys Cloud"],
+    workingOnTotalProjects : 2,
+    technologies : {
+      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Local Storage", "Local Storage", "Fetch Api's", "React Hooks", "Regular Expresssions"], 
+      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB","Cors", "fetch Api's"], 
+      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    },
+  }, 
 ];

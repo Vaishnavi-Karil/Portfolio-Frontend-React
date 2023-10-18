@@ -22,8 +22,9 @@ StyledRoleAndDurationOfWork.displayName = "StyledRoleAndDurationOfWork";
 export const StyledCompanyName = styled.p`
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.9rem;
+  font-size: ${(props) => props?.styling?.fontSize || "1.9rem"};
   line-height: 3rem;
+  border-bottom : ${(props) => props?.styling?.borderBottom || "none"};
 `;
 
 StyledCompanyName.displayName = "StyledCompanyName";
