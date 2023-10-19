@@ -19,10 +19,7 @@ export const Hero = () => {
   const { profile_photo } = Img;
   return (
     <StyledHeroContainer id="/">
-      <StyledImageContainer>
-        <StyledProfileImage src={profile_photo} alt={profile_photo} />
-      </StyledImageContainer>
-      <StyledDescriptionContainer>
+        <StyledDescriptionContainer>
         <StyledHeading6>Hello, I'm </StyledHeading6>
         <StyledHeading1>Vaishnavi Karil</StyledHeading1>
         <StyledHeading3>Full Stack Developer</StyledHeading3>
@@ -39,6 +36,10 @@ export const Hero = () => {
           </StyledButtongGreyBg>
         </StyledButtonContainer>
       </StyledDescriptionContainer>
+      <StyledImageContainer>
+        <StyledProfileImage src={profile_photo} alt={profile_photo} />
+      </StyledImageContainer>
+    
     </StyledHeroContainer>
   );
 };
