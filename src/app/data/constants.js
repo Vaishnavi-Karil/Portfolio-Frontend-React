@@ -144,7 +144,8 @@ export const ArrayOfTools = [
 ];
 
 export const ArrayofExperiences = [
-  {  id : 1,
+  {
+    id: 1,
     companyname: "Cyber Information Technology Corporation",
     designation: "React Js Developer",
     startdate: "Feb 2021",
@@ -162,26 +163,14 @@ export const ArrayofExperiences = [
             return `I'm working as an ${designation} for ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using Next.js React Framework.I'm mention my responsibility to be handling at ${companyname}.`;
           },
           technologies: {
-            frontendtechnologies: ["React"],
-            backendtechnologies: [
-              "Node.js",
-              "Express",
-              "Mongoose ODM",
-              "MongoDB",
-              "JWT",
-              "Cors",
-            ],
+            frontendtechnologies: ["React Hooks", "Redux Toolkit", "fetch", "Javascript", "ECMAScript", "Mui", "JSX", "Css"],
+            backendtechnologies: [ ],
             tools: [
               "Git",
               "Jira",
-              "Elastic Beanstalk",
               "CI/CD",
               "AWS Amplify",
-              "aws",
               "Vercel",
-              "MongoDBCompass",
-              "MongoDB",
-              "MongoDBShell",
             ],
           },
         },
@@ -189,7 +178,7 @@ export const ArrayofExperiences = [
     },
   },
   {
-    id : 2,
+    id: 2,
     companyname: "Phixman",
     designation: "React Js Developer",
     startdate: "Mar 2022",
@@ -199,9 +188,11 @@ export const ArrayofExperiences = [
     projectdetails: {
       workingOnTotalProjects: 1,
       projects: [
-        { id : "Admin Dashboard Panel",
+        {
+          id: "Admin Dashboard Panel",
           plateform: "React App",
           projectname: "Admin Dashboard Panel",
+          projectduration: "Feb 2021 - Present",
           workingTimeDuration: "Feb 2021 - Present",
           responsibility: [],
           description: (designation, companyname, projectname) => {
@@ -209,25 +200,16 @@ export const ArrayofExperiences = [
           },
           technologies: {
             frontendtechnologies: ["React"],
-            backendtechnologies: [
-              "Node.js",
-              "Express",
-              "Mongoose ODM",
-              "MongoDB",
-              "JWT",
-              "Cors",
-            ],
+            backendtechnologies: [ ],
             tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman",
               "Git",
               "Jira",
-              "Elastic Beanstalk",
               "CI/CD",
-              "AWS Amplify",
-              "aws",
-              "Vercel",
-              "MongoDBCompass",
-              "MongoDB",
-              "MongoDBShell",
+              "AWS Amplify",             
             ],
           },
         },
@@ -235,7 +217,8 @@ export const ArrayofExperiences = [
     },
   },
 
-  {  id : 3, 
+  {
+    id: 3,
     companyname: "Infobyd  Software Solutions",
     designation: "React Js Developer",
     startdate: "May 2021",
@@ -245,9 +228,10 @@ export const ArrayofExperiences = [
       workingOnTotalProjects: 2,
       projects: [
         {
-          id : "Stackholder",
+          id: "Stackholder",
+          projectduration: "Feb 2021 - Present",
           plateform: "React App",
-          projectname: "Stakeholder React App",
+          projectname: "Stakeholder",
           workingTimeDuration: "Feb 2021 - Present",
           responsibility: [],
           description: (designation, companyname, responsibility) => {
@@ -255,25 +239,16 @@ export const ArrayofExperiences = [
           },
           technologies: {
             frontendtechnologies: [
-              "React",
-              "Redux",
+              "React Hooks",
+              "Fetch Api's",
               "Material Ui",
               "JavaScript",
               "EcmaScript",
-              "Local Storage",
-              "Local Storage",
-              "Fetch Api's",
-              "React Hooks",
-              "Regular Expresssions",
+              "ReduxToolkit",
+              "JSX", 
+              "CSS"
             ],
-            backendtechnologies: [
-              "Node.js",
-              "Express",
-              "Mongoose ODM",
-              "MongoDB",
-              "Cors",
-              "fetch Api's",
-            ],
+            backendtechnologies: [ ],
             tools: [
               "ReactDevTools",
               "ReduxDevTools",
@@ -282,7 +257,9 @@ export const ArrayofExperiences = [
             ],
           },
         },
-        { id : "Socket Connection with Genesys Cloud", 
+        {
+          id: "Socket Connection with Genesys Cloud",
+          projectduration: "May 2021 - Aug 2021",
           plateform: "Node App",
           projectname: "Socket Connection with Genesys Cloud",
           workingTimeDuration: "Feb 2021 - Present",
@@ -291,8 +268,10 @@ export const ArrayofExperiences = [
             return `I worked as a ${designation} at ${companyname}. ${responsibility}`;
           },
           technologies: {
-            frontendtechnologies: ["ES6", "Javascript"],
+            frontendtechnologies: [],
             backendtechnologies: [
+             "Javascript",
+             "ES6",
               "Node.js",
               "Express",
               "Mongoose ODM",
@@ -307,3 +286,13 @@ export const ArrayofExperiences = [
     },
   },
 ];
+
+
+// Elastic Beanstalk
+// Aws Amplify
+// Jest
+// Docker
+// Redux Toolkit
+// Redux Thunk
+// Next 13 
+// React Hooks

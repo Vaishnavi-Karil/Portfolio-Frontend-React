@@ -20,17 +20,16 @@ export const StyledRoleAndDurationOfWork = styled.div`
 StyledRoleAndDurationOfWork.displayName = "StyledRoleAndDurationOfWork";
 
 export const StyledCompanyName = styled.p`
-  /* color: rgb(85, 85, 85); */
-  /* color: ${(theme) => theme?.text?.textColor}; */
   color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: ${(props) => props?.styling?.fontSize || "1.9rem"};
   line-height: 3rem;
-  border-bottom : ${(props) => props?.styling?.borderBottom || "none"};
+  text-decoration: ${(props) => props?.styling?.textDecoration || "none"};
+  text-underline-offset: ${(props) =>
+    props?.styling?.textUnderlineOffset || "none"};
 `;
 
 StyledCompanyName.displayName = "StyledCompanyName";
-
 
 export const StyledDescription = styled.div`
   padding: 0.8rem 0rem;
@@ -39,19 +38,30 @@ export const StyledDescription = styled.div`
 StyledDescription.displayName = "StyledDescription";
 
 export const StyledTotalExperience = styled.p`
-/* color: rgb(85, 85, 85); */
-/* color: ${(theme) => theme?.text?.textColor}; */
-color: ${({ theme }) => theme.text.textColor};
+  /* color: rgb(85, 85, 85); */
+  /* color: ${(theme) => theme?.text?.textColor}; */
+  color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: 1rem;
-  line-height: 3rem;`; 
+  line-height: 3rem;
+`;
 
 StyledTotalExperience.displayName = "StyledTotalExperience";
 
-
 export const StyledExperienceHeadingContainer = styled.div`
-display : flex; 
-flex-direction : row;
-justify-content: space-between;`; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
 
-StyledExperienceHeadingContainer.displayName = "StyledExperienceHeadingContainer";
+StyledExperienceHeadingContainer.displayName =
+  "StyledExperienceHeadingContainer";
+
+export const StyledFlexBoxContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+`;
+
+StyledFlexBoxContainer.displayName = "StyledFlexBoxContainer";
