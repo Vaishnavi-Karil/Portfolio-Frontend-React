@@ -144,7 +144,7 @@ export const ArrayOfTools = [
 ];
 
 export const ArrayofExperiences = [
-  {
+  {  id : 1,
     companyname: "Cyber Information Technology Corporation",
     designation: "React Js Developer",
     startdate: "Feb 2021",
@@ -189,6 +189,7 @@ export const ArrayofExperiences = [
     },
   },
   {
+    id : 2,
     companyname: "Phixman",
     designation: "React Js Developer",
     startdate: "Mar 2022",
@@ -198,7 +199,7 @@ export const ArrayofExperiences = [
     projectdetails: {
       workingOnTotalProjects: 1,
       projects: [
-        {
+        { id : "Admin Dashboard Panel",
           plateform: "React App",
           projectname: "Admin Dashboard Panel",
           workingTimeDuration: "Feb 2021 - Present",
@@ -234,7 +235,7 @@ export const ArrayofExperiences = [
     },
   },
 
-  {
+  {  id : 3, 
     companyname: "Infobyd  Software Solutions",
     designation: "React Js Developer",
     startdate: "May 2021",
@@ -281,7 +282,7 @@ export const ArrayofExperiences = [
             ],
           },
         },
-        {
+        { id : "Socket Connection with Genesys Cloud", 
           plateform: "Node App",
           projectname: "Socket Connection with Genesys Cloud",
           workingTimeDuration: "Feb 2021 - Present",

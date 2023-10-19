@@ -21,6 +21,7 @@ import {
 export const Experience = () => {
   const experience = ArrayofExperiences.map((experience_details, index) => {
     const {
+      id,
       companyname,
       designation,
       startdate,
@@ -39,6 +40,7 @@ export const Experience = () => {
         description,
         technologies: { frontendtechnologies, backendtechnologies, tools },
       } = project;
+     
       return (
         <div key={index}>
           <StyledExperienceHeadingContainer >
@@ -57,7 +59,7 @@ export const Experience = () => {
     });
 
     return (
-      <StyledExperience key={index}>
+      <StyledExperience key={id}>
         <div style={{ lineHeight: "1.6rem" }}>
           <StyledExperienceHeadingContainer>
             <StyledCompanyName>{companyname}</StyledCompanyName>
