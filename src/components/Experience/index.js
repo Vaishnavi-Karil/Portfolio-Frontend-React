@@ -40,8 +40,8 @@ export const Experience = () => {
         technologies: { frontendtechnologies, backendtechnologies, tools },
       } = project;
       return (
-        <>
-          <StyledExperienceHeadingContainer key={index}>
+        <div key={index}>
+          <StyledExperienceHeadingContainer >
             <StyledCompanyName
               styling={{ fontSize: "1rem", borderBottom: "2px solid" }}
             >
@@ -49,10 +49,10 @@ export const Experience = () => {
             </StyledCompanyName>
             <StyledTotalExperience>{plateform}</StyledTotalExperience>
           </StyledExperienceHeadingContainer>
-          <StyledDescription key={index}>
+          <StyledDescription>
             {description(designation, companyname, projectname)}
           </StyledDescription>
-        </>
+        </div>
       );
     });
 

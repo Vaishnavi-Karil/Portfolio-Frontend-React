@@ -16,11 +16,11 @@ import {
 } from "@/styles/Styles";
 
 export const Hero = () => {
-  const { profile_pic } = Img;
+  const { profile_photo } = Img;
   return (
     <StyledHeroContainer id="/">
       <StyledImageContainer>
-        <StyledProfileImage src={profile_pic} alt={profile_pic} />
+        <StyledProfileImage src={profile_photo} alt={profile_photo} />
       </StyledImageContainer>
       <StyledDescriptionContainer>
         <StyledHeading6>Hello, I'm </StyledHeading6>
