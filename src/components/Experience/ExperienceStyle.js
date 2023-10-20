@@ -37,16 +37,23 @@ export const StyledDescription = styled.div`
 `;
 StyledDescription.displayName = "StyledDescription";
 
-export const StyledTotalExperience = styled.p`
-  /* color: rgb(85, 85, 85); */
-  /* color: ${(theme) => theme?.text?.textColor}; */
+export const StyledYourSkillsHeading = styled.p`
   color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: 1rem;
   line-height: 3rem;
 `;
 
-StyledTotalExperience.displayName = "StyledTotalExperience";
+StyledYourSkillsHeading.displayName = "StyledYourSkillsHeading";
+
+export const StyledProjectDuration = styled.p`
+  color: ${({ theme }) => theme.text.textColor};
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 3rem;
+`;
+
+StyledProjectDuration.displayName = "StyledProjectDuration";
 
 export const StyledExperienceHeadingContainer = styled.div`
   display: flex;
@@ -59,9 +66,33 @@ StyledExperienceHeadingContainer.displayName =
 
 export const StyledFlexBoxContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   gap: 0.5rem;
 `;
 
 StyledFlexBoxContainer.displayName = "StyledFlexBoxContainer";
+
+export const StyledYourSkills = styled.p`
+  color: ${({ theme }) => theme.text.textColor};
+  font-weight: 600;
+  font-size: ${(props) => props?.styling?.fontSize || "1.9rem"};
+  line-height: 3rem;
+  text-decoration: ${(props) => props?.styling?.textDecoration || "none"};
+  text-underline-offset: ${(props) =>
+    props?.styling?.textUnderlineOffset || "none"};
+`;
+
+StyledYourSkills.displayName = "StyledYourSkills";
+
+export const StyledStartAndEndDate = styled.p`
+  color: ${({ theme }) => theme.text.textColor};
+  font-weight: 600;
+  font-size: ${(props) => props?.styling?.fontSize || "1rem"};
+  line-height: 3rem;
+  text-decoration: ${(props) => props?.styling?.textDecoration || "none"};
+  text-underline-offset: ${(props) =>
+    props?.styling?.textUnderlineOffset || "none"};
+`;
+
+StyledStartAndEndDate.displayName = "StyledStartAndEndDate";

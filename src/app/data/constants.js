@@ -163,9 +163,13 @@ export const ArrayofExperiences = [
             return `I'm working as an ${designation} for ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using Next.js React Framework.I'm mention my responsibility to be handling at ${companyname}.`;
           },
           technologies: {
-            frontendtechnologies: ["React Hooks", "Redux Toolkit", "fetch", "Javascript", "ECMAScript", "Mui", "JSX", "Css"],
+            frontendtechnologies: ["Next.js", "React Hooks", "Redux Toolkit", "Fetch API", "Javascript", "ECMAScript", "Mui", "JSZ", "CSS-3"],
             backendtechnologies: [ ],
             tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman",
               "Git",
               "Jira",
               "CI/CD",
@@ -199,7 +203,7 @@ export const ArrayofExperiences = [
             return `I'm working as an ${designation} at ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using React.js Frontend JavaScript Library for building user interfaces based on components and I'm mention my responsibility to be handled at ${companyname}.`;
           },
           technologies: {
-            frontendtechnologies: ["React"],
+            frontendtechnologies: ["React.js", "React Hooks", "Redux Toolkit", "Fetch API", "Javascript", "ECMAScript", "Mui", "JSZ", "CSS-3"],
             backendtechnologies: [ ],
             tools: [
               "ReactDevTools",
@@ -235,12 +239,13 @@ export const ArrayofExperiences = [
           workingTimeDuration: "Feb 2021 - Present",
           responsibility: [],
           description: (designation, companyname, responsibility) => {
-            return `I worked as a ${designation} at ${companyname}. ${responsibility}`;
+            return `I worked as a ${designation} at ${companyname}. ${responsibility}. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
           },
           technologies: {
             frontendtechnologies: [
+              "React.js",
               "React Hooks",
-              "Fetch Api's",
+              "Fetch API",
               "Material Ui",
               "JavaScript",
               "EcmaScript",
@@ -265,7 +270,7 @@ export const ArrayofExperiences = [
           workingTimeDuration: "Feb 2021 - Present",
           responsibility: [],
           description: (designation, companyname, responsibility) => {
-            return `I worked as a ${designation} at ${companyname}. ${responsibility}`;
+            return `I worked as a ${designation} at ${companyname}. ${responsibility} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut!.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
           },
           technologies: {
             frontendtechnologies: [],
@@ -277,7 +282,7 @@ export const ArrayofExperiences = [
               "Mongoose ODM",
               "MongoDB",
               "Cors",
-              "fetch Api's",
+              "Fetch API",
             ],
             tools: ["Postman"],
           },

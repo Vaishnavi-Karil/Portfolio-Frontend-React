@@ -14,9 +14,11 @@ import {
   StyledExperience,
   StyledExperienceHeadingContainer,
   StyledFlexBoxContainer,
-  StyledHeaderTypography,
+  StyledProjectDuration,
   StyledRoleAndDurationOfWork,
-  StyledTotalExperience,
+  StyledStartAndEndDate,
+  StyledYourSkills,
+  StyledYourSkillsHeading,
 } from "./ExperienceStyle";
 
 export const Experience = () => {
@@ -37,8 +39,6 @@ export const Experience = () => {
         plateform,
         projectname,
         projectduration,
-        workingTimeDuration,
-        responsibility,
         description,
         technologies: { frontendtechnologies, backendtechnologies, tools },
       } = project;
@@ -55,36 +55,24 @@ export const Experience = () => {
             >
               {projectname} - {plateform}
             </StyledCompanyName>
-            {/* <StyledTotalExperience> </StyledTotalExperience> */}
 
-            <StyledTotalExperience>{projectduration}</StyledTotalExperience>
+            <StyledProjectDuration>{projectduration}</StyledProjectDuration>
           </StyledExperienceHeadingContainer>
           <StyledDescription>
             {description(designation, companyname, projectname)}
           </StyledDescription>
           <StyledFlexBoxContainer>
-            <StyledTotalExperience> Used Skills</StyledTotalExperience>
-            <div>
-              
-              <StyledCompanyName
-                styling={{
-                  fontSize: "1rem",
-                  textDecoration: "underline",
-                  textUnderlineOffset: "9px",
-                }}
-              >
-            frontend : {frontendtechnologies.join(", ")}
-              </StyledCompanyName>
-              <StyledCompanyName
-                styling={{
-                  fontSize: "1rem",
-                  textDecoration: "underline",
-                  textUnderlineOffset: "9px",
-                }}
-              >
-               backend :  {backendtechnologies.join(", ")}
-              </StyledCompanyName>
-            </div>
+            <StyledYourSkillsHeading>used skills : </StyledYourSkillsHeading>
+            <StyledYourSkills
+              styling={{
+                fontSize: "1rem",
+              }}
+            >
+              {frontendtechnologies.length != 0 &&
+                frontendtechnologies.join(", ")}
+              {backendtechnologies.length != 0 &&
+                backendtechnologies.join(", ")}
+            </StyledYourSkills>
           </StyledFlexBoxContainer>
         </div>
       );
@@ -95,11 +83,10 @@ export const Experience = () => {
         <div style={{ lineHeight: "1.6rem" }}>
           <StyledExperienceHeadingContainer>
             <StyledCompanyName>{companyname}</StyledCompanyName>
-            <StyledTotalExperience>
+            <StyledStartAndEndDate>
               {startdate} - {enddate}
-            </StyledTotalExperience>
+            </StyledStartAndEndDate>
           </StyledExperienceHeadingContainer>
-
           <StyledRoleAndDurationOfWork>
             <p>{designation}</p>
             <p>{experience}</p>
