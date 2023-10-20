@@ -150,7 +150,7 @@ export const ArrayofExperiences = [
     designation: "React Js Developer",
     startdate: "Feb 2021",
     enddate: "Present",
-    experience: "freelance",
+    experience: "freelance: no-documents",
     projectdetails: {
       workingOnTotalProjects: 1,
       projects: [
@@ -216,8 +216,8 @@ export const ArrayofExperiences = [
           id: "Admin Dashboard Panel",
           plateform: "React App",
           projectname: "Admin Dashboard Panel",
-          projectduration: "Feb 2021 - Present",
-          workingTimeDuration: "Feb 2021 - Present",
+          projectduration: "Mar2022 - Jan2023",
+          workingTimeDuration: "Mar2022 - Jan2023",
           responsibility: [],
           description: (designation, companyname, projectname) => {
             return `I'm working as an ${designation} at ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using React.js Frontend JavaScript Library for building user interfaces based on components and I'm mention my responsibility to be handled at ${companyname}.`;
@@ -294,10 +294,10 @@ export const ArrayofExperiences = [
         },
         {
           id: "Socket Connection with Genesys Cloud",
-          projectduration: "May 2021 - Aug 2021",
+          projectduration: "May2021 - Aug2021",
           plateform: "Node App",
           projectname: "Socket Connection with Genesys Cloud",
-          workingTimeDuration: "Feb 2021 - Present",
+          workingTimeDuration: "May2021 - Aug2021",
           responsibility: [],
           description: (designation, companyname, responsibility) => {
             return `I worked as a ${designation} at ${companyname}. ${responsibility} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut!.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
@@ -314,6 +314,76 @@ export const ArrayofExperiences = [
               "Cors",
               "Fetch API.",
             ],
+            tools: ["Postman"],
+          },
+        },
+      ],
+    },
+  },
+  {
+    id: 4,
+    companyname: "Asparrow Tech",
+    designation: "React Intern",
+    startdate: "Dec 2020",
+    enddate: "April 2022",
+    experience: "Intenship",
+    projectdetails: {
+      workingOnTotalProjects: 2,
+      projects: [
+        {
+          id: "Todo Application - demo-app",
+          projectduration: "March 2020 - March 2022 (demo-app)",
+          plateform: "React App",
+          projectname: "Todo Application",
+          workingTimeDuration: "10 days (demo-app)",
+          responsibility: [],
+          description: (designation, companyname, responsibility) => {
+            return `I worked as a ${designation} at ${companyname}. ${responsibility}. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "React.js",
+              "React Hooks",
+              "Fetch API",
+              "Material Ui",
+              "JavaScript",
+              "EcmaScript",
+              "ReduxToolkit",
+              "JSX",
+              "CSS.",
+            ],
+            backendtechnologies: [],
+            tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman.",
+            ],
+          },
+        },
+        {
+          id: "ERM",
+          projectduration: "April 2021 - April 2021 (live-app)",
+          plateform: "React App",
+          projectname: "Employ Relationship Managment",
+          workingTimeDuration: "April 2021 - April 2021 (live-app)",
+          responsibility: [],
+          description: (designation, companyname, responsibility) => {
+            return `I worked as a ${designation} at ${companyname}. ${responsibility} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut!.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "React.js",
+              "React Hooks",
+              "Fetch API",
+              "Material Ui",
+              "JavaScript",
+              "EcmaScript",
+              "ReduxToolkit",
+              "JSX",
+              "CSS.",
+            ],
+            backendtechnologies: [ ],
             tools: ["Postman"],
           },
         },

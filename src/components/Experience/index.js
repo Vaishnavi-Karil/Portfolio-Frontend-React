@@ -9,6 +9,7 @@ import {
 import { ArrayofExperiences } from "@/app/data/constants";
 import {
   CompanyName,
+  ProjectContainer,
   ProjectDescription,
   StyledCompanyName,
   StyledDescription,
@@ -45,7 +46,7 @@ export const Experience = () => {
       } = project;
 
       return (
-        <div key={index}>
+        <ProjectContainer key={index} >
           <StyledExperienceHeadingContainer>
             <StyledCompanyName
               styling={{
@@ -56,30 +57,29 @@ export const Experience = () => {
             >
               {projectname} - {plateform}
             </StyledCompanyName>
-
             <StyledProjectDuration>{projectduration}</StyledProjectDuration>
           </StyledExperienceHeadingContainer>
-        <ProjectDescription>
-        <StyledDescription>
-            {description(designation, companyname, projectname)}
-          </StyledDescription>
-          <StyledFlexBoxContainer>
-            <StyledYourSkillsHeading>used skills: </StyledYourSkillsHeading>
-            <StyledYourSkills
-              styling={{
-                fontSize: "1rem",
-              }}
-            >
-              {frontendtechnologies.length != 0 && (
-                <p>{frontendtechnologies.join(", ")}</p>
-              )}
-              {backendtechnologies.length != 0 && (
-                <p>{backendtechnologies.join(",  ")}</p>
-              )}
-            </StyledYourSkills>
-          </StyledFlexBoxContainer>
-        </ProjectDescription>
-        </div>
+          <ProjectDescription>
+            <StyledDescription>
+              {description(designation, companyname, projectname)}
+            </StyledDescription>
+            <StyledFlexBoxContainer>
+              <StyledYourSkillsHeading>used skills: </StyledYourSkillsHeading>
+              <StyledYourSkills
+                styling={{
+                  fontSize: "1rem",
+                }}
+              >
+                {frontendtechnologies.length != 0 && (
+                  <p>{frontendtechnologies.join(", ")}</p>
+                )}
+                {backendtechnologies.length != 0 && (
+                  <p>{backendtechnologies.join(",  ")}</p>
+                )}
+              </StyledYourSkills>
+            </StyledFlexBoxContainer>
+          </ProjectDescription>
+        </ProjectContainer>
       );
     });
 

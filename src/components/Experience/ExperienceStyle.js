@@ -102,4 +102,11 @@ StyledStartAndEndDate.displayName = "StyledStartAndEndDate";
 export const ProjectDescription = styled.div`
 `; 
 
-ProjectDescription.displayName = "ProjectDescription"
+ProjectDescription.displayName = "ProjectDescription";
+
+
+export const ProjectContainer = styled.div`
+margin : 1rem 0rem;
+`; 
+
+ProjectContainer.displayName = "ProjectContainer";
