@@ -150,7 +150,7 @@ export const ArrayofExperiences = [
     designation: "React Js Developer",
     startdate: "Feb 2021",
     enddate: "Present",
-    experience: "total experience",
+    experience: "freelance",
     projectdetails: {
       workingOnTotalProjects: 1,
       projects: [
@@ -158,23 +158,44 @@ export const ArrayofExperiences = [
           plateform: "Next App",
           projectname: "DevShopify",
           workingTimeDuration: "Feb 2021 - Present",
-          responsibility: [],
+          responsibility: [
+            "Meet client requirements and ensure client satisfaction.",
+            "Optimize application performance to meet client needs.",
+            "Adhere to project deadlines and deliverables.",
+            "Handle end-to-end UI development.",
+          ],
           description: (designation, companyname, projectname) => {
             return `I'm working as an ${designation} for ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using Next.js React Framework.I'm mention my responsibility to be handling at ${companyname}.`;
           },
           technologies: {
-            frontendtechnologies: ["Next.js", "React Hooks", "Redux Toolkit", "Fetch API", "Javascript", "ECMAScript", "Mui", "JSZ", "CSS-3"],
-            backendtechnologies: [ ],
+            frontendtechnologies: [
+              "Next.js",
+              "Material UI",
+              "React Hooks",
+              "Redux Toolkit",
+              "Fetch API",
+              "Redux Thunk",
+              "MUI",
+              "Styled Component",
+              "Js",
+              "ECMAScript",
+            ],
+            backendtechnologies: [
+              "Node.js",
+              "Express,JWT",
+              "Mongoose",
+              "MongoDB.",
+            ],
             tools: [
               "ReactDevTools",
               "ReduxDevTools",
               "Google Chrome",
               "Postman",
               "Git",
+              "GitHub",
               "Jira",
               "CI/CD",
-              "AWS Amplify",
-              "Vercel",
+              "AWS Amplify.",
             ],
           },
         },
@@ -187,8 +208,7 @@ export const ArrayofExperiences = [
     designation: "React Js Developer",
     startdate: "Mar 2022",
     enddate: "Jan 2023",
-    experience: "total experience",
-
+    experience: "full-time",
     projectdetails: {
       workingOnTotalProjects: 1,
       projects: [
@@ -203,8 +223,18 @@ export const ArrayofExperiences = [
             return `I'm working as an ${designation} at ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using React.js Frontend JavaScript Library for building user interfaces based on components and I'm mention my responsibility to be handled at ${companyname}.`;
           },
           technologies: {
-            frontendtechnologies: ["React.js", "React Hooks", "Redux Toolkit", "Fetch API", "Javascript", "ECMAScript", "Mui", "JSZ", "CSS-3"],
-            backendtechnologies: [ ],
+            frontendtechnologies: [
+              "React.js",
+              "Material Ui",
+              "React Hooks",
+              "JSX",
+              "Redux Toolkit",
+              "Fetch API",
+              "Javascript",
+              "ECMAScript",
+              "CSS.",
+            ],
+            backendtechnologies: [],
             tools: [
               "ReactDevTools",
               "ReduxDevTools",
@@ -213,7 +243,7 @@ export const ArrayofExperiences = [
               "Git",
               "Jira",
               "CI/CD",
-              "AWS Amplify",             
+              "AWS Amplify.",
             ],
           },
         },
@@ -227,16 +257,16 @@ export const ArrayofExperiences = [
     designation: "React Js Developer",
     startdate: "May 2021",
     enddate: "Mar 2022",
-    experience: "total experience",
+    experience: "full-time",
     projectdetails: {
       workingOnTotalProjects: 2,
       projects: [
         {
           id: "Stackholder",
-          projectduration: "Feb 2021 - Present",
+          projectduration: "Sep 2021 - Mar 2022",
           plateform: "React App",
           projectname: "Stakeholder",
-          workingTimeDuration: "Feb 2021 - Present",
+          workingTimeDuration: "Sep 2021 - Mar 2022",
           responsibility: [],
           description: (designation, companyname, responsibility) => {
             return `I worked as a ${designation} at ${companyname}. ${responsibility}. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
@@ -250,15 +280,15 @@ export const ArrayofExperiences = [
               "JavaScript",
               "EcmaScript",
               "ReduxToolkit",
-              "JSX", 
-              "CSS"
+              "JSX",
+              "CSS.",
             ],
-            backendtechnologies: [ ],
+            backendtechnologies: [],
             tools: [
               "ReactDevTools",
               "ReduxDevTools",
               "Google Chrome",
-              "Postman",
+              "Postman.",
             ],
           },
         },
@@ -275,14 +305,14 @@ export const ArrayofExperiences = [
           technologies: {
             frontendtechnologies: [],
             backendtechnologies: [
-             "Javascript",
-             "ES6",
+              "Javascript",
+              "ES6",
               "Node.js",
               "Express",
               "Mongoose ODM",
               "MongoDB",
               "Cors",
-              "Fetch API",
+              "Fetch API.",
             ],
             tools: ["Postman"],
           },
@@ -292,12 +322,11 @@ export const ArrayofExperiences = [
   },
 ];
 
-
 // Elastic Beanstalk
 // Aws Amplify
 // Jest
 // Docker
 // Redux Toolkit
 // Redux Thunk
-// Next 13 
+// Next 13
 // React Hooks

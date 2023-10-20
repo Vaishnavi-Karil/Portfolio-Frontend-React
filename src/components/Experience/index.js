@@ -9,6 +9,7 @@ import {
 import { ArrayofExperiences } from "@/app/data/constants";
 import {
   CompanyName,
+  ProjectDescription,
   StyledCompanyName,
   StyledDescription,
   StyledExperience,
@@ -58,22 +59,26 @@ export const Experience = () => {
 
             <StyledProjectDuration>{projectduration}</StyledProjectDuration>
           </StyledExperienceHeadingContainer>
-          <StyledDescription>
+        <ProjectDescription>
+        <StyledDescription>
             {description(designation, companyname, projectname)}
           </StyledDescription>
           <StyledFlexBoxContainer>
-            <StyledYourSkillsHeading>used skills : </StyledYourSkillsHeading>
+            <StyledYourSkillsHeading>used skills: </StyledYourSkillsHeading>
             <StyledYourSkills
               styling={{
                 fontSize: "1rem",
               }}
             >
-              {frontendtechnologies.length != 0 &&
-                frontendtechnologies.join(", ")}
-              {backendtechnologies.length != 0 &&
-                backendtechnologies.join(", ")}
+              {frontendtechnologies.length != 0 && (
+                <p>{frontendtechnologies.join(", ")}</p>
+              )}
+              {backendtechnologies.length != 0 && (
+                <p>{backendtechnologies.join(",  ")}</p>
+              )}
             </StyledYourSkills>
           </StyledFlexBoxContainer>
+        </ProjectDescription>
         </div>
       );
     });

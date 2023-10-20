@@ -37,11 +37,11 @@ export const StyledDescription = styled.div`
 `;
 StyledDescription.displayName = "StyledDescription";
 
-export const StyledYourSkillsHeading = styled.p`
+export const StyledYourSkillsHeading = styled.div`
   color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: 1rem;
-  line-height: 3rem;
+  width: 6rem;
 `;
 
 StyledYourSkillsHeading.displayName = "StyledYourSkillsHeading";
@@ -73,14 +73,15 @@ export const StyledFlexBoxContainer = styled.div`
 
 StyledFlexBoxContainer.displayName = "StyledFlexBoxContainer";
 
-export const StyledYourSkills = styled.p`
+export const StyledYourSkills = styled.div`
   color: ${({ theme }) => theme.text.textColor};
   font-weight: 600;
   font-size: ${(props) => props?.styling?.fontSize || "1.9rem"};
-  line-height: 3rem;
   text-decoration: ${(props) => props?.styling?.textDecoration || "none"};
   text-underline-offset: ${(props) =>
     props?.styling?.textUnderlineOffset || "none"};
+  display: flex;
+  flex-direction: column;
 `;
 
 StyledYourSkills.displayName = "StyledYourSkills";
@@ -96,3 +97,9 @@ export const StyledStartAndEndDate = styled.p`
 `;
 
 StyledStartAndEndDate.displayName = "StyledStartAndEndDate";
+
+
+export const ProjectDescription = styled.div`
+`; 
+
+ProjectDescription.displayName = "ProjectDescription"
