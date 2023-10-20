@@ -263,10 +263,10 @@ export const ArrayofExperiences = [
       projects: [
         {
           id: "Stackholder",
-          projectduration: "Sep 2021 - Mar 2022",
+          projectduration: "Sept 2021 - Mar 2022",
           plateform: "React App",
           projectname: "Stakeholder",
-          workingTimeDuration: "Sep 2021 - Mar 2022",
+          workingTimeDuration: "Sept 2021 - Mar 2022",
           responsibility: [],
           description: (designation, companyname, responsibility) => {
             return `I worked as a ${designation} at ${companyname}. ${responsibility}. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
