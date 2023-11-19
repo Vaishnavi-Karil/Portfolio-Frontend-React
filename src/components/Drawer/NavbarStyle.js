@@ -4,14 +4,14 @@ import styled from "styled-components";
 export const StyledNavbarContainer = styled.div`
   height: 17vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  margin: 0rem 10rem;
+  /* margin: 0rem 10rem; */
 
   @media only screen and (max-width: 600px) {
-    margin: 0rem 2rem;
+    /* margin: 0rem 2rem; */
   }
 `;
 StyledNavbarContainer.displayName = 'StyledNavbarContainer';
@@ -39,7 +39,7 @@ StyledWebsiteName.displayName = 'StyledWebsiteName';
 
 export const StyledNavItems = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-end;
   gap: 2.5rem;
   font-size: 1.4rem;
@@ -105,7 +105,7 @@ export const StyledThemeItems = styled.div`
 
 
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     gap: 1rem;
     font-size: 1.4rem;
@@ -121,7 +121,7 @@ export const StyledThemeItems = styled.div`
    
     /* display: ${(props) => props.display}; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: inherit;
     border-radius: 1rem;
     background: ${({theme})=> theme.bg.bgColor};
@@ -134,3 +134,6 @@ export const StyledThemeItems = styled.div`
     flex-wrap: wrap;
   }
 `;
+
+// width : 20vw;
+// flex: 1;

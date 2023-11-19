@@ -17,7 +17,7 @@ import { route } from "@/app/utils/routes";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaCog } from "react-icons/fa";
 
-export const Navbar = ({ theme, currentTheme, setcurrentTheme }) => {
+export const Drawer = ({ theme, currentTheme, setcurrentTheme }) => {
   const [openMenuDrawer, setopenMenuDrawer] = useState(false);
   const [openDrawerForCustomTheme, setopenDrawerForCustomTheme] =
     useState(false);
