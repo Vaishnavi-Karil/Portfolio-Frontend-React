@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { useState } from "react";
 import { GlobalStyles } from "./globalStyles";
 import { themes } from "./utils/Themes";
+import { Avatar } from "@/components/Image";
 
 const Container = styled.div`
   display: flex;
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
 
             <Container>
               <Drawer>
+                <Avatar/>
                 <DrawerList
                   theme={themes}
                   currentTheme={currentTheme}
