@@ -66,10 +66,7 @@ export const StyledNavLink = styled.div`
   justify-content: flex-start;
   gap: 1rem;
   align-items: center;
-  color :  rgb(85, 85, 85);
-  &:active {
-    color: #ffff;
-  }
+  
 `;
 
 StyledNavLink.displayName = "StyledNavLink";

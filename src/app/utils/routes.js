@@ -9,14 +9,28 @@ import {
   FaEnvelope,
   FaUser,
 } from "react-icons/fa";
+import { AiOutlineUser, AiOutlineMail } from "react-icons/ai";
+import {
+  IoHomeOutline,
+  IoBriefcaseOutline,
+  IoGitBranchOutline,
+} from "react-icons/io5";
+import { RiUserLine } from "react-icons/ri";
 
 // import { Javascript, Work } from "@mui/icons-material";
 export const route = [
   {
+    id: "home",
+    path: "/",
+    // icon: () => <Javascript />,
+    icon: () => <IoHomeOutline />,
+    text: "Home",
+  },
+  {
     id: "about",
     path: "/#about",
     // icon: () => <Javascript />,
-    icon: () => <FaUser />,
+    icon: () => <AiOutlineUser />,
     text: "About",
   },
   {
@@ -29,19 +43,19 @@ export const route = [
   {
     id: "experience",
     // icon: () => <Work />,
-    icon: () => <FaBriefcase />,
+    icon: () => <IoBriefcaseOutline />,
     path: "/#experience",
     text: "Experience",
   },
   {
     id: "projects",
-    icon: () => <FaCodeBranch />,
+    icon: () => <IoGitBranchOutline />,
     path: "/#projects",
     text: "Projects",
   },
   {
     id: "contact",
-    icon: () => <FaEnvelope />,
+    icon: () => <AiOutlineMail />,
     path: "/#contact",
     text: "Contact",
   },
