@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const StyledNavbarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   align-items: center;
   /* margin: 0rem 10rem; */
 
@@ -37,6 +37,8 @@ export const StyledNavItems = styled.div`
   font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
   position: relative;
+  width: 100%;
+  padding: 0rem 2rem 0rem 2rem;
 
   @media only screen and (max-width: 600px) {
     display: flex;
@@ -58,7 +60,13 @@ export const StyledNavItems = styled.div`
 
 StyledNavItems.displayName = "StyledNavItems";
 
-export const StyledNavLink = styled(Link)``;
+export const StyledNavLink = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+`;
 
 StyledNavLink.displayName = "StyledNavLink";
 

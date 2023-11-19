@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import {
-  GrayTheme,
   ModeIcon,
-  NaviBlueTheme,
-  StyledButtonTheme,
-  StyledLogo,
-  StyledLogoContainer,
   StyledMenu,
   StyledNavItems,
   StyledNavLink,
@@ -16,9 +11,11 @@ import {
 import { route } from "@/app/utils/routes";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaCog } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export const DrawerList = ({ theme, currentTheme, setcurrentTheme }) => {
   const [openMenuDrawer, setopenMenuDrawer] = useState(false);
+  const router = useRouter();
   const [openDrawerForCustomTheme, setopenDrawerForCustomTheme] =
     useState(false);
   let renderColorThemeButton = [];
@@ -30,11 +27,9 @@ export const DrawerList = ({ theme, currentTheme, setcurrentTheme }) => {
       renderColorThemeButton.push(theme_name);
     }
   }
+
   return (
     <StyledNavbarContainer>
-      <StyledLogoContainer>
-        <StyledLogo href="/">Portfolio.</StyledLogo>
-      </StyledLogoContainer>
       <StyledMenu onClick={() => setopenMenuDrawer(!openMenuDrawer)}>
         <AiOutlineMenu />
       </StyledMenu>
@@ -43,8 +38,9 @@ export const DrawerList = ({ theme, currentTheme, setcurrentTheme }) => {
           const { id, path, text } = pg;
 
           return (
-            <StyledNavLink key={id} href={path}>
-              {text}
+            <StyledNavLink key={id} onClick={() => router.push(path)}>
+              <AiOutlineMenu />
+              <p>{text}</p>
             </StyledNavLink>
           );
         })}
