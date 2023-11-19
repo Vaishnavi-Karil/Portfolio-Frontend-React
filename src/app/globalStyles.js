@@ -26,8 +26,12 @@ button {
 
 
 svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1em;
+    height: 1em;
+
+    &:active{
+      color : rgb(85, 85, 85);
+    }
 }
 
 

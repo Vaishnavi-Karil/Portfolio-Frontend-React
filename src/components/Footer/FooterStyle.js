@@ -39,3 +39,11 @@ export const StyledCopyRightContainer = styled.div`
 `;
 
 StyledCopyRightContainer.displayName = "StyledCopyRightContainer";
+
+export const DesignedBy = styled.span`
+  text-align: center;
+  color: #ffff;
+  font-size: 1rem;
+`;
+
+DesignedBy.displayName = "DesignedBy";

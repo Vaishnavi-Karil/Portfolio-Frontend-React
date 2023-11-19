@@ -66,6 +66,10 @@ export const StyledNavLink = styled.div`
   justify-content: flex-start;
   gap: 1rem;
   align-items: center;
+  color :  rgb(85, 85, 85);
+  &:active {
+    color: #ffff;
+  }
 `;
 
 StyledNavLink.displayName = "StyledNavLink";
@@ -82,7 +86,12 @@ export const StyledMenu = styled.button`
 
 StyledMenu.displayName = "StyledMenu";
 
-export const ModeIcon = styled.div``;
+export const ModeIcon = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+`;
 
 ModeIcon.displayName = "ModeIcon";
 

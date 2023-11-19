@@ -21,16 +21,19 @@ const Drawer = styled.div`
   flex: 1;
   padding: 3rem 0rem;
   height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const ChildrenDisplay = styled.div`
   /* margin: 0rem 10rem; */
-  height: 85vh;
+  height: inherit;
   overflow-y: auto;
 
   @media only screen and (max-width: 600px) {
     /* margin: 0rem 0rem; */
-    height: 80vh;
+    height: inherit;
     overflow-y: auto;
   }
 `;
@@ -38,7 +41,7 @@ const ChildrenDisplay = styled.div`
 const MainContainer = styled.div`
   padding: 0rem 0rem 0rem 1rem;
   height: inherit;
-  flex: 4;
+  flex: 5;
 `;
 
 const metadata = {
@@ -69,12 +72,11 @@ export default function RootLayout({ children }) {
                   currentTheme={currentTheme}
                   setcurrentTheme={setcurrentTheme}
                 />
+                <Footer />
               </Drawer>
 
               <MainContainer>
-                <div>Portfolio.</div>
                 <ChildrenDisplay>{children}</ChildrenDisplay>
-                <Footer />
               </MainContainer>
             </Container>
           </StyledComponentsRegistry>
