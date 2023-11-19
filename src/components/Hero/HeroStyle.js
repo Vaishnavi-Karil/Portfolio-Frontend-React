@@ -25,7 +25,7 @@ StyledImageContainer.displayName = 'StyledImageContainer';
 export const StyledProfileImage = styled(Image)`
   flex: 1;
   border: transparent;
-  border-radius: 60%;
+  border-radius: 17%;
   margin: 13% 0rem;
 
   @media only screen and (max-width: 600px) {
