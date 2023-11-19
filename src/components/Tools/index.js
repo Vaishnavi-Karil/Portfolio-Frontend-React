@@ -49,7 +49,7 @@ export const Tools = ({ currentTab, setcurrentTab }) => {
               setcurrentTab("Tools");
             }}
           >
-            <StyledTab>Development Tools</StyledTab>
+            <StyledTab>Developer Tools</StyledTab>
           </StyledTabLink>
         </StyledTabs>
       </StyledCardHeadingContainer>

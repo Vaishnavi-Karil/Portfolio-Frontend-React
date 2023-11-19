@@ -51,7 +51,7 @@ export const Skills = ({
               setcurrentTab("Tools");
             }}
           >
-            <StyledTab>Development Tools</StyledTab>
+            <StyledTab>Developer Tools</StyledTab>
           </StyledTabLink>
         </StyledTabs>
       </StyledCardHeadingContainer>

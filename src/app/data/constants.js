@@ -150,7 +150,7 @@ export const ArrayofExperiences = [
     designation: "React Js Developer",
     startdate: "Feb 2021",
     enddate: "Present",
-    experience: "freelance: no-documents",
+    experience: "freelance",
     projectdetails: {
       workingOnTotalProjects: 1,
       projects: [
