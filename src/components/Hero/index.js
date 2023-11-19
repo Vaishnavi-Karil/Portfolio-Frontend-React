@@ -16,7 +16,7 @@ import {
 } from "@/styles/Styles";
 
 export const Hero = () => {
-  const { profile_photo } = Img;
+  const { profile_pic} = Img;
   return (
     <StyledHeroContainer id="/">
         <StyledDescriptionContainer>
@@ -37,7 +37,7 @@ export const Hero = () => {
         </StyledButtonContainer>
       </StyledDescriptionContainer>
       <StyledImageContainer>
-        <StyledProfileImage src={profile_photo} alt={profile_photo} />
+        <StyledProfileImage src={profile_pic} alt={profile_pic} />
       </StyledImageContainer>
     
     </StyledHeroContainer>
