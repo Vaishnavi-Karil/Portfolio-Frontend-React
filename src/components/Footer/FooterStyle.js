@@ -2,18 +2,19 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const StyledFooterContainer = styled.div`
-  height: 32vh;
+  height: 8vh;
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 0.3rem;
+  padding: 1rem;
 `;
-StyledFooterContainer.displayName ='StyledFooterContainer';
+StyledFooterContainer.displayName = "StyledFooterContainer";
 
 export const StyledFooterNavigationContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1.8rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   align-items: center;
   justify-content: center;
@@ -26,16 +27,15 @@ export const StyledFooterNavigationContainer = styled.div`
   }
 `;
 
-StyledFooterNavigationContainer.displayName ='StyledFooterNavigationContainer';
+StyledFooterNavigationContainer.displayName = "StyledFooterNavigationContainer";
 export const StyledFooterLink = styled(Link)``;
 
-
-StyledFooterLink.displayName = 'StyledFooterLink';
+StyledFooterLink.displayName = "StyledFooterLink";
 
 export const StyledCopyRightContainer = styled.div`
   text-align: center;
-   color: ${({theme}) => theme.text.textColor};
-  font-size: 1.2rem;
+  color: ${({ theme }) => theme.text.textColor};
+  font-size: 1rem;
 `;
 
-StyledCopyRightContainer.displayName = 'StyledCopyRightContainer';
+StyledCopyRightContainer.displayName = "StyledCopyRightContainer";

@@ -1,5 +1,5 @@
 "use client";
-import { Drawer } from "@/components/Drawer";
+import { DrawerList } from "@/components/DrawerList";
 import StyledComponentsRegistry from "./lib/registry";
 import styled, { ThemeProvider } from "styled-components";
 import { Footer } from "@/components/Footer";
@@ -11,23 +11,34 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  height: 100vh;
+`;
+
+const Drawer = styled.div`
+  border: rgb(53, 53, 53) 1px solid;
+  box-shadow: 0rem 0rem 100rem 0rem rgb(0 0 0 / 73%);
+  background: #211531;
+  flex: 1;
+  padding: 3rem 0rem;
+  height: inherit;
 `;
 
 const ChildrenDisplay = styled.div`
   /* margin: 0rem 10rem; */
-  
+  height: 85vh;
+  overflow-y: auto;
+
   @media only screen and (max-width: 600px) {
     /* margin: 0rem 0rem; */
-
+    height: 80vh;
+    overflow-y: auto;
   }
 `;
 
-
-
-
 const MainContainer = styled.div`
-width: 80vw;
-padding: 0rem 1rem;
+  padding: 0rem 0rem 0rem 1rem;
+  height: inherit;
+  flex: 4;
 `;
 
 const metadata = {
@@ -52,15 +63,16 @@ export default function RootLayout({ children }) {
             <GlobalStyles theme={themes[currentTheme]} />
 
             <Container>
-              
-              <Drawer
+              <Drawer>
+                <DrawerList
                   theme={themes}
                   currentTheme={currentTheme}
                   setcurrentTheme={setcurrentTheme}
                 />
-               
-              
+              </Drawer>
+
               <MainContainer>
+                <div>Portfolio.</div>
                 <ChildrenDisplay>{children}</ChildrenDisplay>
                 <Footer />
               </MainContainer>

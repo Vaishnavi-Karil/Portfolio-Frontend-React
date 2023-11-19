@@ -2,7 +2,6 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const StyledNavbarContainer = styled.div`
-  height: 17vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,28 +13,21 @@ export const StyledNavbarContainer = styled.div`
     /* margin: 0rem 2rem; */
   }
 `;
-StyledNavbarContainer.displayName = 'StyledNavbarContainer';
-
+StyledNavbarContainer.displayName = "StyledNavbarContainer";
 
 export const StyledLogoContainer = styled.div``;
 
-StyledLogoContainer.displayName = 'StyledLogoContainer';
-
-
+StyledLogoContainer.displayName = "StyledLogoContainer";
 
 export const StyledLogo = styled(Link)`
   font-size: 2rem;
 `;
 
-StyledLogo.displayName = 'StyledLogo';
-
-
+StyledLogo.displayName = "StyledLogo";
 
 export const StyledWebsiteName = styled(Link)``;
 
-StyledWebsiteName.displayName = 'StyledWebsiteName';
-
-
+StyledWebsiteName.displayName = "StyledWebsiteName";
 
 export const StyledNavItems = styled.div`
   display: flex;
@@ -51,9 +43,9 @@ export const StyledNavItems = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 1rem;
-    background: ${({theme})=> theme.bg.bgColor};
+    background: ${({ theme }) => theme.bg.bgColor};
     /* box-shadow: 22px 22px 45px #bebebe, -22px -22px 45px #ffffff; */
-    border : 1px solid ${({theme}) => theme.text.borderColor};
+    border: 1px solid ${({ theme }) => theme.text.borderColor};
     position: absolute;
     flex: 1;
     right: 1.9rem;
@@ -64,18 +56,15 @@ export const StyledNavItems = styled.div`
   }
 `;
 
-StyledNavItems.displayName ='StyledNavItems';
-
+StyledNavItems.displayName = "StyledNavItems";
 
 export const StyledNavLink = styled(Link)``;
 
-StyledNavLink.displayName = 'StyledNavLink';
-
-
+StyledNavLink.displayName = "StyledNavLink";
 
 export const StyledMenu = styled.button`
   display: none;
-  width : 2.5rem; 
+  width: 2.5rem;
   height: 2.5rem;
 
   @media only screen and (max-width: 600px) {
@@ -83,49 +72,42 @@ export const StyledMenu = styled.button`
   }
 `;
 
-StyledMenu.displayName = 'StyledMenu';
+StyledMenu.displayName = "StyledMenu";
 
-
-export const ModeIcon = styled.div`
-`;
+export const ModeIcon = styled.div``;
 
 ModeIcon.displayName = "ModeIcon";
 
-
 export const ThemeButton = styled.button`
-background: ${(props) => props.themebgcolor};
-border-radius: 30%;
-width: 2rem;
-height: 2rem;`
+  background: ${(props) => props.themebgcolor};
+  border-radius: 30%;
+  width: 2rem;
+  height: 2rem;
+`;
 
-ThemeButton.displayName = 'ThemeButton';
-
+ThemeButton.displayName = "ThemeButton";
 
 export const StyledThemeItems = styled.div`
-
-
   display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 1rem;
-    font-size: 1.4rem;
-    font-family: "Poppins",sans-serif;
-    position: absolute;
-    top: 3rem;
-    border : 1px solid ${({theme}) => theme.text.borderColor};
-    padding: 1rem;
-    border-radius: 1rem;
-
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 3rem;
+  border: 1px solid ${({ theme }) => theme.text.borderColor};
+  padding: 1rem;
+  border-radius: 1rem;
 
   @media only screen and (max-width: 600px) {
-   
     /* display: ${(props) => props.display}; */
     display: flex;
     flex-direction: column;
     justify-content: inherit;
     border-radius: 1rem;
-    background: ${({theme})=> theme.bg.bgColor};
-    border : 1px solid ${({theme}) => theme.text.borderColor};
+    background: ${({ theme }) => theme.bg.bgColor};
+    border: 1px solid ${({ theme }) => theme.text.borderColor};
     position: relative;
     flex: 1;
     right: 1.1rem;

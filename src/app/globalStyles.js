@@ -15,7 +15,8 @@ a {
 body{
     font-size: 1.4rem;
     background-color: ${({ theme }) => theme.bg.bgColor};
-    color :${({ theme }) => theme.bg.bgTextColor };
+    color :${({ theme }) => theme.bg.bgTextColor};
+    overflow: hidden;
 }
 
 button {
