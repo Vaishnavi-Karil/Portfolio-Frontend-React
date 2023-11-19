@@ -37,7 +37,7 @@ StyledMoreInformation.displayName = "StyledMoreInformation";
 export const StyledCardContainer = styled.div`
   min-height: 80vh;
   height: auto;
-  text-align: center;
+  text-align:  ${(props) => props?.styling?.alignItem||"center"};
   display: flex;
   flex-direction: column;
   width: 100%;

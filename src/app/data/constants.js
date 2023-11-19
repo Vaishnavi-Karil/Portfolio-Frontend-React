@@ -2,7 +2,7 @@ export const ArrayOfSkills = [
   {
     title: "Frontend Skills",
     skills: [
-      { 
+      {
         skillname: "Next.js",
         proficiency: "Experienced",
       },
@@ -91,7 +91,7 @@ export const ArrayOfTools = [
       },
       {
         toolname: "Elastic Beanstalk (Host)",
-        proficiency:  "Experienced",
+        proficiency: "Experienced",
       },
       {
         toolname: "CI/CD",
@@ -99,7 +99,7 @@ export const ArrayOfTools = [
       },
       {
         toolname: "AWS Amplify (Host)",
-        proficiency:  "Experienced",
+        proficiency: "Experienced",
       },
 
       {
@@ -108,7 +108,7 @@ export const ArrayOfTools = [
       },
       {
         toolname: "Vercel",
-        proficiency:  "Experienced",
+        proficiency: "Experienced",
       },
     ],
   },
@@ -119,22 +119,18 @@ export const ArrayOfTools = [
         toolname: "React DevTools",
         proficiency: "Experienced",
       },
-
       {
         toolname: "Redux DevTools",
         proficiency: "Experienced",
       },
-
       {
         toolname: "Google Chrome",
         proficiency: "Experienced",
       },
-
       {
         toolname: "Postman",
         proficiency: "Experienced",
       },
-
       {
         toolname: "MongoDB Compass",
         proficiency: "Experienced",
@@ -147,70 +143,260 @@ export const ArrayOfTools = [
   },
 ];
 
-
 export const ArrayofExperiences = [
   {
-    companyname : "Cyber Information Technology Corporation", 
-    designation : "Full Stack Developer", 
-    startdate : "February 2021", 
-    enddate : "15 days notice period", 
-    experience : Date.now().toString(), 
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
-    plateform : "Web Application", 
-    projectname : ["DevShopify"],
-    workingOnTotalProjects : 1,
-    technologies : {
-      frontendtechnologies: ["React"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["Git", "Jira", "Elastic Beanstalk", "CI/CD", "AWS Amplify", "aws", "Vercel", "MongoDBCompass", "MongoDB", "MongoDBShell"],
-    }
-  }, 
-  {
-    companyname : "PHIXMAN", 
-    designation : "React Frontend Developer", 
-    startdate : "March 2022", 
-    enddate : "January 2023", 
-    experience : "total experience",
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
-    plateform : "Web Application", 
-    projectname : ["Phixman Admin Dashboard"],
-    workingOnTotalProjects : 1,
-    technologies : {
-      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    id: 1,
+    companyname: "Cyber Information Technology Corporation",
+    designation: "React Js Developer",
+    startdate: "Feb 2021",
+    enddate: "Present",
+    experience: "freelance: no-documents",
+    projectdetails: {
+      workingOnTotalProjects: 1,
+      projects: [
+        {
+          plateform: "Next App",
+          projectname: "DevShopify",
+          workingTimeDuration: "Feb 2021 - Present",
+          responsibility: [
+            "Meet client requirements and ensure client satisfaction.",
+            "Optimize application performance to meet client needs.",
+            "Adhere to project deadlines and deliverables.",
+            "Handle end-to-end UI development.",
+          ],
+          description: (designation, companyname, projectname) => {
+            return `I'm working as an ${designation} for ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using Next.js React Framework.I'm mention my responsibility to be handling at ${companyname}.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "Next.js",
+              "Material UI",
+              "React Hooks",
+              "Redux Toolkit",
+              "Fetch API",
+              "Redux Thunk",
+              "MUI",
+              "Styled Component",
+              "Js",
+              "ECMAScript",
+            ],
+            backendtechnologies: [
+              "Node.js",
+              "Express,JWT",
+              "Mongoose",
+              "MongoDB.",
+            ],
+            tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman",
+              "Git",
+              "GitHub",
+              "Jira",
+              "CI/CD",
+              "AWS Amplify.",
+            ],
+          },
+        },
+      ],
     },
-  }, 
+  },
   {
-    companyname : "INFOBYD SOFTWARE SOLUTIONS", 
-    designation : "React Frontend Developer", 
-    startdate : "May 2021", 
-    enddate : "Mar 2022", 
-    experience : "total experience",
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
-    plateform : "Web Application", 
-    projectname : ["Stakeholder React App", "Socket Connection with Genesys Cloud"],
-    workingOnTotalProjects : 2,
-    technologies : {
-      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    id: 2,
+    companyname: "Phixman",
+    designation: "React Js Developer",
+    startdate: "Mar 2022",
+    enddate: "Jan 2023",
+    experience: "full-time",
+    projectdetails: {
+      workingOnTotalProjects: 1,
+      projects: [
+        {
+          id: "Admin Dashboard Panel",
+          plateform: "React App",
+          projectname: "Admin Dashboard Panel",
+          projectduration: "Mar2022 - Jan2023",
+          workingTimeDuration: "Mar2022 - Jan2023",
+          responsibility: [],
+          description: (designation, companyname, projectname) => {
+            return `I'm working as an ${designation} at ${companyname} and my responsibility to handle and manage complete frontend development of ${projectname} from scratch using React.js Frontend JavaScript Library for building user interfaces based on components and I'm mention my responsibility to be handled at ${companyname}.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "React.js",
+              "Material Ui",
+              "React Hooks",
+              "JSX",
+              "Redux Toolkit",
+              "Fetch API",
+              "Javascript",
+              "ECMAScript",
+              "CSS.",
+            ],
+            backendtechnologies: [],
+            tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman",
+              "Git",
+              "Jira",
+              "CI/CD",
+              "AWS Amplify.",
+            ],
+          },
+        },
+      ],
     },
-  }, 
+  },
+
   {
-    companyname : "ASPARROW TECH", 
-    designation : "SOFTWARE TRAINEE", 
-    startdate : "Dec 2020", 
-    enddate : "April 2020", 
-    experience : "total experience",
-    description : "I worked as a Full Stack Developer at Cyber Information Technology. I was responsible for the development of the website and the backend of the application. I was also responsible for the development of the frontend of the application.",
-    plateform : "Web Application", 
-    projectname : ["React Intenship"],
-    workingOnTotalProjects : 0,
-    technologies : {
-      frontendtechnologies: ["React","Redux", "Material Ui", "JavaScript", "EcmaScript", "Html", "Css", "Moduler CSS"], 
-      backendtechnologies: ["Node.js", "Express", "Mongoose ODM", "MongoDB", "JWT", "Cors"], 
-      tools: ["ReactDevTools", "ReduxDevTools", "Google Chrome", "Postman", ]
+    id: 3,
+    companyname: "Infobyd  Software Solutions",
+    designation: "React Js Developer",
+    startdate: "May 2021",
+    enddate: "Mar 2022",
+    experience: "full-time",
+    projectdetails: {
+      workingOnTotalProjects: 2,
+      projects: [
+        {
+          id: "Stackholder",
+          projectduration: "Sept 2021 - Mar 2022",
+          plateform: "React App",
+          projectname: "Stakeholder",
+          workingTimeDuration: "Sept 2021 - Mar 2022",
+          responsibility: [],
+          description: (designation, companyname, responsibility) => {
+            return `I worked as a ${designation} at ${companyname}. ${responsibility}. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "React.js",
+              "React Hooks",
+              "Fetch API",
+              "Material Ui",
+              "JavaScript",
+              "EcmaScript",
+              "ReduxToolkit",
+              "JSX",
+              "CSS.",
+            ],
+            backendtechnologies: [],
+            tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman.",
+            ],
+          },
+        },
+        {
+          id: "Socket Connection with Genesys Cloud",
+          projectduration: "May2021 - Aug2021",
+          plateform: "Node App",
+          projectname: "Socket Connection with Genesys Cloud",
+          workingTimeDuration: "May2021 - Aug2021",
+          responsibility: [],
+          description: (designation, companyname, responsibility) => {
+            return `I worked as a ${designation} at ${companyname}. ${responsibility} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut!.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
+          },
+          technologies: {
+            frontendtechnologies: [],
+            backendtechnologies: [
+              "Javascript",
+              "ES6",
+              "Node.js",
+              "Express",
+              "Mongoose ODM",
+              "MongoDB",
+              "Cors",
+              "Fetch API.",
+            ],
+            tools: ["Postman"],
+          },
+        },
+      ],
     },
-  }, 
-]
+  },
+  {
+    id: 4,
+    companyname: "Asparrow Tech",
+    designation: "React Intern",
+    startdate: "Dec 2020",
+    enddate: "April 2022",
+    experience: "Intenship",
+    projectdetails: {
+      workingOnTotalProjects: 2,
+      projects: [
+        {
+          id: "Todo Application - demo-app",
+          projectduration: "March 2020 - March 2022 (demo-app)",
+          plateform: "React App",
+          projectname: "Todo Application",
+          workingTimeDuration: "10 days (demo-app)",
+          responsibility: [],
+          description: (designation, companyname, responsibility) => {
+            return `I worked as a ${designation} at ${companyname}. ${responsibility}. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "React.js",
+              "React Hooks",
+              "Fetch API",
+              "Material Ui",
+              "JavaScript",
+              "EcmaScript",
+              "ReduxToolkit",
+              "JSX",
+              "CSS.",
+            ],
+            backendtechnologies: [],
+            tools: [
+              "ReactDevTools",
+              "ReduxDevTools",
+              "Google Chrome",
+              "Postman.",
+            ],
+          },
+        },
+        {
+          id: "ERM",
+          projectduration: "April 2021 - April 2021 (live-app)",
+          plateform: "React App",
+          projectname: "Employ Relationship Managment",
+          workingTimeDuration: "April 2021 - April 2021 (live-app)",
+          responsibility: [],
+          description: (designation, companyname, responsibility) => {
+            return `I worked as a ${designation} at ${companyname}. ${responsibility} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus, possimus asperiores sed sunt sint adipisci ex consequuntur culpa eaque ut!.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi facere velit accusamus est voluptatum minus ducimus. Molestiae officia necessitatibus.`;
+          },
+          technologies: {
+            frontendtechnologies: [
+              "React.js",
+              "React Hooks",
+              "Fetch API",
+              "Material Ui",
+              "JavaScript",
+              "EcmaScript",
+              "ReduxToolkit",
+              "JSX",
+              "CSS.",
+            ],
+            backendtechnologies: [ ],
+            tools: ["Postman"],
+          },
+        },
+      ],
+    },
+  },
+];
+
+// Elastic Beanstalk
+// Aws Amplify
+// Jest
+// Docker
+// Redux Toolkit
+// Redux Thunk
+// Next 13
+// React Hooks

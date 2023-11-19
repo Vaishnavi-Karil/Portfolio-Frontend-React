@@ -30,7 +30,6 @@ export const StyledContainer = styled.div`
   min-height: 20rem;
   border-radius: 10%;
   border:  ${({theme})=> theme.text.borderColor} 1px solid;
- 
   box-shadow: ${({theme}) => theme.boxShadow};
   background: ${({theme}) => theme.cardBg};
   padding: 1.9rem;
@@ -58,6 +57,7 @@ export const StyledEducationDetails = styled.div`
   min-height: 3vh;
 `;
 StyledEducationDetails.displayName ='StyledEducationDetails';
+
 export const StyledAboutHeader = styled.div`
   font-size: 2rem;
 `;
